@@ -1,0 +1,41 @@
+{
+    "records": {
+        
+            "record0": {
+                "title": "Grace Under Pressure",
+                "year": "1984",
+                "artist": "Rush",
+                "purchase_location": "Luna Records",
+                "photo": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
+                "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22"
+            },
+        
+            "record1": {
+                "title": "Glass Houses",
+                "year": "1980",
+                "artist": "Billy Joel",
+                "purchase_location": "Yesterday & Today Records",
+                "photo": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
+                "uid": "g8pP2GLw2ievwVVrMYih42XZVwl2"
+            },
+     
+            "record2": {
+                "title": "Tango in the Night",
+                "year": "1984",
+                "artist": "Fleetwood Mac",
+                "purchase_location": "Grimey's New & Preloved Music",
+                "photo": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
+                "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22"
+            }
+    },
+    "users" : {
+        "user0": {
+            "uid": "g8pP2GLw2ievwVVrMYih42XZVwl2",
+            "username": "b"
+        },
+        "user1": {
+            "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22",
+            "username": "i"
+        }
+    }
+}

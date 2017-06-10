@@ -1,0 +1,1 @@
+var app = angular.module("RecordApp", ["ngAnimate", "ngSanitize", "ngRoute"]);
