@@ -37,36 +37,41 @@
 //   });
 // });
 
-// app.config(function($routeProvider) {
-//   $routeProvider
-//     .when("/auth", {
-//       templateUrl: "partials/auth.html",
-//       controller: "AuthCtrl"
-//     })
-//     .when("/items/list", {
-//       templateUrl: "partials/item-list.html",
-//       controller: "ItemListCtrl",
-//       resolve: {isAuth}
-//     })
-//     .when("/items/new", {
-//       templateUrl: "partials/item-new.html",
-//       controller: "ItemNewCtrl",
-//       resolve: {isAuth}
-//     })
-//     .when("/items/view/:id", {
-//       templateUrl: "partials/item-view.html",
-//       controller: "ItemViewCtrl",
-//       resolve: {isAuth}
-//     })
-//     .when("/items/edit/:id", {
-//       templateUrl: "partials/item-new.html",
-//       controller: "ItemEditCtrl",
-//       resolve: {isAuth}
-//     })
-//     .when("/logout", {
-//       templateUrl: "partials/auth.html",
-//       controller: "AuthCtrl",
-//       resolve: {isAuth}
-//     })
-//     .otherwise("/auth");
-// });
+app.config(function($routeProvider) {
+  $routeProvider
+    .when("/login", {
+      templateUrl: "partials/login.html",
+      controller: "AuthCtrl"
+    })
+    .when("/record/list", {
+      templateUrl: "partials/record-list.html",
+      controller: "RecordListCtrl",
+      // resolve: {isAuth}
+    })
+    .when("/record/new", {
+      templateUrl: "partials/record-new.html",
+      controller: "RecordNewCtrl",
+      // resolve: {isAuth}
+    })
+    .when("/record/view/:id", {
+      templateUrl: "partials/record-view.html",
+      controller: "RecordViewCtrl",
+      // resolve: {isAuth}
+    })
+    .when("/record/edit/:id", {
+      templateUrl: "partials/record-new.html",
+      controller: "RecordEditCtrl",
+      // resolve: {isAuth}
+    })
+    .when("/record/search", {
+      templateUrl: "partials/record-search.html",
+      controller: "RecordSearchCtrl",
+      // resolve: {isAuth}
+    })
+    .when("/logout", {
+      templateUrl: "partials/login.html",
+      controller: "AuthCtrl",
+      // resolve: {isAuth}
+    })
+    .otherwise("/login");
+});
