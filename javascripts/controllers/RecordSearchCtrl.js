@@ -2,6 +2,9 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
 	$scope.userRecordSearch = "";
     $scope.searchedRecords = [];
     $scope.searchedRecordArts = [];
+    $scope.searchedArtistNameArray = [];
+    $scope.searchedArtistAlbumTitle = [];
+
 
     $scope.searchRecordsButton = () => {
         getSearchedRecords();
@@ -27,6 +30,7 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
                 $scope.searchedArtistName = value.artist;
                 $scope.searchedArtistAlbumTitle = value.name;
                 console.log("$scope.searchedArtistName", $scope.searchedArtistName);
+                $scope.searchedArtistNameArray.push($scope.searchedArtistName);
                 console.log("$scope.searchedArtistAlbumTitle", $scope.searchedArtistAlbumTitle);
             });
         }).catch((error) => {
@@ -35,3 +39,6 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
     };    
 
 });
+
+
+
