@@ -3,7 +3,8 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
     $scope.searchedRecords = [];
     $scope.searchedRecordArts = [];
     $scope.searchedArtistNameArray = [];
-    $scope.searchedArtistAlbumTitle = [];
+    $scope.searchedArtistAlbumTitleArray = [];
+    // $scope.searchedArtistAndTitleArray = [];
 
 
     $scope.searchRecordsButton = () => {
@@ -21,6 +22,8 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
     };
 
     let getAlbumArt = () => {
+        $scope.searchedArtistAndTitleArray = [];
+        
         RecordFactory.getSearchedRecordArt($scope.userRecordSearch).then((searchedRecordArtz) => {
             $scope.searchedRecordArts = searchedRecordArtz;
             // console.log("searchedRecordArts", $scope.searchedRecordArts);
@@ -29,9 +32,9 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
             angular.forEach($scope.albumArtObject,function(value,index){
                 $scope.searchedArtistName = value.artist;
                 $scope.searchedArtistAlbumTitle = value.name;
-                console.log("$scope.searchedArtistName", $scope.searchedArtistName);
-                $scope.searchedArtistNameArray.push($scope.searchedArtistName);
-                console.log("$scope.searchedArtistAlbumTitle", $scope.searchedArtistAlbumTitle);
+                // $scope.searchedArtistNameArray.push($scope.searchedArtistName);
+                // $scope.searchedArtistAlbumTitleArray.push($scope.searchedArtistAlbumTitle);
+                $scope.searchedArtistAndTitleArray.push($scope.searchedArtistName + " " + $scope.searchedArtistAlbumTitle);
             });
         }).catch((error) => {
             console.log("error", error);
