@@ -1,9 +1,21 @@
-app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, DISCOGS_CONFIG) {
+app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, DISCOGS_CONFIG, LASTFM_CONFIG) {
 
   let getSearchedRecordsList = (userRecordSearch) => {
     let searchedRecordz = [];
     return $q ((resolve, reject) => {
        $http.get(`https://api.discogs.com/database/search?q={${userRecordSearch}}&{?title,release_title,credit,artist,label,year,format,catno,barcode,track}&key=${DISCOGS_CONFIG.key}&secret=${DISCOGS_CONFIG.secret}`)
+       .then((results) => {
+         resolve(results);
+         }).catch((error) => {
+           reject(error);
+         });
+     });
+   };
+
+  let getSearchedRecordArt = (userRecordSearch) => {
+    let searchedRecordArtz = [];
+    return $q ((resolve, reject) => {
+       $http.get(`http://ws.audioscrobbler.com/2.0/?method=album.search&album=${userRecordSearch}&api_key=${LASTFM_CONFIG.apiKey}&format=json`)
        .then((results) => {
          resolve(results);
          }).catch((error) => {
@@ -86,7 +98,7 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, DISCOGS_CONFIG
  //  };
 
 
-return {getSearchedRecordsList:getSearchedRecordsList};
+return {getSearchedRecordsList:getSearchedRecordsList, getSearchedRecordArt:getSearchedRecordArt};
 
 // return {getAddressList:getAddressList, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
 
