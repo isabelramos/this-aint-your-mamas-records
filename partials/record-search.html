@@ -1,9 +1,7 @@
 <input type="text" name="" placeholder="SEARCH FOR RECORDS" ng-model="userRecordSearch">
 <a class="btn btn-default" ng-click="searchRecordsButton()">SEARCH</a>
 
-<!-- <div>
-	<div ng-repeat="artist in searchedArtistNameArray track by $index">{{artist}}</div>
-	<div ng-repeat="title in searchedArtistAlbumTitleArray track by $index">{{title}}</div>
-</div> -->
-
-<div ng-repeat="info in searchedArtistAndTitleArray track by $index">{{info}}</div> 
+<div ng-repeat="info in searchedArtistAndTitleArray track by $index">
+<img src="{{info.searchedAlbumArt}}">
+{{info.searchedArtistName}} {{info.searchedArtistAlbumTitle}}
+</div> 

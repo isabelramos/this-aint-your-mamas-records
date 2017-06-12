@@ -3,7 +3,6 @@
         
             "record0": {
                 "title": "Grace Under Pressure",
-                "year": "1984",
                 "artist": "Rush",
                 "purchase_location": "Luna Records",
                 "photo": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
@@ -12,7 +11,6 @@
         
             "record1": {
                 "title": "Glass Houses",
-                "year": "1980",
                 "artist": "Billy Joel",
                 "purchase_location": "Yesterday & Today Records",
                 "photo": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
@@ -21,7 +19,6 @@
      
             "record2": {
                 "title": "Tango in the Night",
-                "year": "1984",
                 "artist": "Fleetwood Mac",
                 "purchase_location": "Grimey's New & Preloved Music",
                 "photo": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
