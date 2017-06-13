@@ -2,11 +2,9 @@ app.controller("RecordSearchCtrl", function($rootScope, $scope, RecordFactory) {
 	$scope.userRecordSearch = "";
     $scope.searchedRecordArts = [];
 
-
     $scope.searchRecordsButton = () => {
         getAlbumInfo();
     };
-
 
     let getAlbumInfo = () => {
         $scope.searchedArtistAndTitleArray = [];

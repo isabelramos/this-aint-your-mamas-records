@@ -7,11 +7,6 @@ app.constant("FIREBASE_CONFIG", {
     messagingSenderId: ""
 });
 
-app.constant("DISCOGS_CONFIG", {
-    key: "",
-    secret: ""
-});
-
 app.constant("LASTFM_CONFIG", {
     apiKey: ""
 });

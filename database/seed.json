@@ -6,7 +6,7 @@
                 "artist": "Rush",
                 "purchase_location": "Luna Records",
                 "photo": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
-                "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22"
+                "uid": "duGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             },
         
             "record1": {
@@ -14,7 +14,7 @@
                 "artist": "Billy Joel",
                 "purchase_location": "Yesterday & Today Records",
                 "photo": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
-                "uid": "g8pP2GLw2ievwVVrMYih42XZVwl2"
+                "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
             },
      
             "record2": {
@@ -22,17 +22,17 @@
                 "artist": "Fleetwood Mac",
                 "purchase_location": "Grimey's New & Preloved Music",
                 "photo": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
-                "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22"
+                "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             }
     },
     "users" : {
         "user0": {
-            "uid": "g8pP2GLw2ievwVVrMYih42XZVwl2",
-            "username": "b"
+            "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1",
+            "username": "i"
         },
         "user1": {
-            "uid": "gCIMipGNWrXptoBkEJvTDtf2PN22",
-            "username": "i"
+            "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2",
+            "username": "n"
         }
     }
 }

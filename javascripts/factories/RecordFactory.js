@@ -1,16 +1,4 @@
-app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, DISCOGS_CONFIG, LASTFM_CONFIG) {
-
-  let getSearchedRecordsList = (userRecordSearch) => {
-    let searchedRecordz = [];
-    return $q ((resolve, reject) => {
-       $http.get(`https://api.discogs.com/database/search?q={${userRecordSearch}}&{?title,release_title,credit,artist,label,year,format,catno,barcode,track}&key=${DISCOGS_CONFIG.key}&secret=${DISCOGS_CONFIG.secret}`)
-       .then((results) => {
-         resolve(results);
-         }).catch((error) => {
-           reject(error);
-         });
-     });
-   };
+app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG) {
 
   let getSearchedRecordArt = (userRecordSearch) => {
     let searchedRecordArtz = [];
@@ -98,7 +86,7 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, DISCOGS_CONFIG
  //  };
 
 
-return {getSearchedRecordsList:getSearchedRecordsList, getSearchedRecordArt:getSearchedRecordArt};
+return {getSearchedRecordArt:getSearchedRecordArt};
 
 // return {getAddressList:getAddressList, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
 
