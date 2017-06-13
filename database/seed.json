@@ -28,11 +28,13 @@
     "users" : {
         "user0": {
             "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1",
-            "username": "i"
+            "profile_pic": "https://avatars1.githubusercontent.com/u/25022316?v=3&s=400",
+            "username": "THEVINYLNERD"
         },
         "user1": {
             "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2",
-            "username": "n"
+            "profile_pic": "https://pbs.twimg.com/profile_images/666057207310647296/gjNgRDZp.jpg",
+            "username": "NATMONTANER"
         }
     }
 }

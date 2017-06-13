@@ -6,3 +6,59 @@ body {
 
 input {
   color: #726967; }
+
+.login-input {
+  border-style: none;
+  color: white;
+  background-color: transparent;
+  border-bottom: 2px solid white; }
+
+.toggled {
+  position: absolute;
+  margin-right: -250px; }
+
+#profileCol .profile-sidebar {
+  min-height: 410px; }
+
+.profile {
+  margin: 20px 0; }
+
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: white; }
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important; }
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px; }
+
+.profile-usertitle-name {
+  color: #726967;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px; }
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px; }
+
+.profile-usermenu {
+  margin-top: 30px;
+  text-align: center; }
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px; }
+
+.profile-content {
+  padding: 20px;
+  background: white;
+  min-height: 410px; }
