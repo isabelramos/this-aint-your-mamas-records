@@ -13,6 +13,12 @@ input {
   background-color: transparent;
   border-bottom: 2px solid white; }
 
+.navbar {
+  background-color: transparent;
+  border: none; }
+  .navbar .navbar-brand {
+    color: white; }
+
 .toggled {
   position: absolute;
   margin-right: -250px; }
@@ -53,6 +59,10 @@ input {
 .profile-usermenu {
   margin-top: 30px;
   text-align: center; }
+
+.profile-usermenu .nav:hover {
+  background-color: none;
+  opacity: .5; }
 
 .profile-usermenu ul li a i {
   margin-right: 8px;

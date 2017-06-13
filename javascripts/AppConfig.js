@@ -46,32 +46,47 @@ app.config(function($routeProvider) {
     .when("/record/list", {
       templateUrl: "partials/record-list.html",
       controller: "RecordListCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/record/new", {
       templateUrl: "partials/record-new.html",
       controller: "RecordNewCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/record/view/:id", {
       templateUrl: "partials/record-view.html",
       controller: "RecordViewCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/record/edit/:id", {
       templateUrl: "partials/record-new.html",
       controller: "RecordEditCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
     })
     .when("/record/search", {
       templateUrl: "partials/record-search.html",
       controller: "RecordSearchCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
+    })
+    .when("/view-friends", {
+      templateUrl: "partials/view-friends.html",
+      controller: "ViewFriendsCtrl",
+      resolve: {isAuth}
+    })
+    .when("/view-friends/collection", {
+      templateUrl: "partials/view-friends-collection.html",
+      controller: "ViewFriendsCollectionCtrl",
+      resolve: {isAuth}
+    })
+    .when("/view-friends/collection/:id", {
+      templateUrl: "partials/view-friends-record.html",
+      controller: "ViewFriendsRecordCtrl",
+      resolve: {isAuth}
     })
     .when("/logout", {
       templateUrl: "partials/login.html",
       controller: "AuthCtrl",
-      // resolve: {isAuth}
+      resolve: {isAuth}
     })
     .otherwise("/login");
 });
