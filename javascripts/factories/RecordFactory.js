@@ -13,24 +13,36 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
    };
 
 
-	// let getAddressList = (userId) => {
-	// 	let addressez = [];
-	// 	return $q ((resolve, reject) => {
- //    		$http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json?orderBy="uid"&equalTo="${userId}"`)
- //    		.then((firebaseItems) => {
- //          let itemCollection = firebaseItems.data;
- //          if (itemCollection !== null) {
- //            Object.keys(itemCollection).forEach((key) => {
- //              itemCollection[key].id = key;
- //              addressez.push(itemCollection[key]);
- //            });
- //          }
- //          	resolve(addressez);
-	//       	}).catch((error) => {
-	//         	reject(error);
-	//      	});
- //    	}); 
- // 	};
+	let getRecordList = (userId) => {
+		let recordz = [];
+		return $q ((resolve, reject) => {
+    		$http.get(`${FIREBASE_CONFIG.databaseURL}/records.json?orderBy="uid"&equalTo="${userId}"`)
+    		.then((firebaseItems) => {
+          let itemCollection = firebaseItems.data;
+          if (itemCollection !== null) {
+            Object.keys(itemCollection).forEach((key) => {
+              itemCollection[key].id = key;
+              recordz.push(itemCollection[key]);
+            });
+          }
+          	resolve(recordz);
+	      	}).catch((error) => {
+	        	reject(error);
+	     	});
+    	}); 
+ 	};
+
+    let getSingleRecord = (id) => {
+    return $q ((resolve, reject) => {
+      $http.get(`${FIREBASE_CONFIG.databaseURL}/records/${id}.json`)
+      .then((results) => {
+        results.data.id = id;
+        resolve(results);
+      }).catch((error) => {
+        reject(error);
+      });
+    });
+  };
 
 	// let postNewAddress = (newAddress) => {
 	// 	return $q ((resolve, reject) => {
@@ -42,18 +54,6 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
  //      		});
  //    	});
  //  	};
-
- //  let getSingleAddress = (id) => {
- //    return $q ((resolve, reject) => {
- //      $http.get(`${FIREBASE_CONFIG.databaseURL}/addresses/${id}.json`)
- //      .then((results) => {
- //        results.data.id = id;
- //        resolve(results);
- //      }).catch((error) => {
- //        reject(error);
- //      });
- //    });
- //  };
 
  //  let editAddress = (address) => {
  //    return $q ((resolve, reject) => {
@@ -86,9 +86,6 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
  //  };
 
 
-return {getSearchedRecordArt:getSearchedRecordArt};
-
-// return {getAddressList:getAddressList, postNewAddress:postNewAddress, getSingleAddress:getSingleAddress, editAddress:editAddress, deletz:deletz};
-
+return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord};
 
 });

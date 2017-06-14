@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-xs-6">
+		<input type="text" name="" placeholder="SEARCH COLLECTION">
+	</div>
+</div>
+
+<div class="row" ng-repeat="record in records">
+  <div class="col-md-3">
+    <a ng-href="#!/record/view/:id" class="thumbnail">
+      <img src="{{record.photo}}">
+    </a>
+  </div>
+</div>
+

@@ -1,16 +1,16 @@
 app.controller("RecordListCtrl", function($rootScope, $scope, RecordFactory) {
-	// $scope.addresses = [];
+	$scope.records = [];
 
-	// let getAddresses = () => {
- //    	AddressFactory.getAddressList($rootScope.user.uid).then((addressez) => {
- //    		$scope.addresses = addressez;
- //            console.log(addressez);
- //    	}).catch((error) => {
- //      		console.log("error", error);
- //    	});
- //  	};
+	let getRecords = () => {
+    	RecordFactory.getRecordList($rootScope.user.uid).then((recordz) => {
+    		$scope.records = recordz;
+            console.log(recordz);
+    	}).catch((error) => {
+      		console.log("error", error);
+    	});
+  	};
 
-	// getAddresses();
+	getRecords();
 
 
  //    $scope.deleteAddress = (id) => {
