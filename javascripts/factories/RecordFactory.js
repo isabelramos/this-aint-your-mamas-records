@@ -31,7 +31,7 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
 	     	});
     	}); 
  	};
-
+  
     let getSingleRecord = (id) => {
     return $q ((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/records/${id}.json`)

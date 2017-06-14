@@ -6,7 +6,7 @@
 
 <div class="row" ng-repeat="record in records">
   <div class="col-md-3">
-    <a ng-href="#!/record/view/:id" class="thumbnail">
+    <a ng-href="#!/record/view/{{record.id}}" class="thumbnail">
       <img src="{{record.photo}}">
     </a>
   </div>
