@@ -3,5 +3,6 @@
 
 <div ng-repeat="info in searchedArtistAndTitleArray track by $index">
 <img src="{{info.searchedAlbumArt}}">
-{{info.searchedArtistName}} {{info.searchedArtistAlbumTitle}}
+{{info.searchedArtistAlbumTitle}} {{info.searchedArtistName}} 
+<a class="btn btn-default" ng-click="viewSelectedRecord(info.searchedArtistAlbumTitle, info.searchedArtistName)">SELECT</a>
 </div> 

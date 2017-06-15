@@ -1,5 +1,7 @@
 app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG) {
 
+  let lastSelectedAlbum  = {};
+
   let getSearchedRecordArt = (userRecordSearch) => {
     let searchedRecordArtz = [];
     return $q ((resolve, reject) => {
@@ -12,6 +14,21 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
      });
    };
 
+  let getSelectedRecordInfo = (albumTitle, artistName) => {
+    return $q ((resolve, reject) => {
+      $http.get(`http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=${LASTFM_CONFIG.apiKey}&artist=${artistName}&album=${albumTitle}&format=json`)
+      .then((results) => {
+        lastSelectedAlbum = results.data.album;
+        resolve(results.data.album);
+      }).catch((error) => {
+        reject(error);
+      });
+    });
+  };
+
+  let getLastSelectedAlbum = () => {
+    return lastSelectedAlbum;
+  };
 
 	let getRecordList = (userId) => {
 		let recordz = [];
@@ -86,6 +103,6 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
  //  };
 
 
-return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord};
+return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum};
 
 });
