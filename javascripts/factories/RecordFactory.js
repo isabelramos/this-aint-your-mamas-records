@@ -61,27 +61,26 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
     });
   };
 
-	// let postNewAddress = (newAddress) => {
-	// 	return $q ((resolve, reject) => {
- //    		$http.post(`${FIREBASE_CONFIG.databaseURL}/addresses.json`, JSON.stringify(newAddress))
- //    		.then((results) => {
- //    			resolve(results);
- //      		}).catch((error) => {
- //      			reject(error);
- //      		});
- //    	});
- //  	};
+	let postNewRecord = (newRecord) => {
+		return $q ((resolve, reject) => {
+    		$http.post(`${FIREBASE_CONFIG.databaseURL}/records.json`, JSON.stringify(newRecord))
+    		.then((results) => {
+    			resolve(results);
+      		}).catch((error) => {
+      			reject(error);
+      		});
+    	});
+  	};
 
- //  let editAddress = (address) => {
+ //  let editRecord = (record) => {
  //    return $q ((resolve, reject) => {
- //      $http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${address.id}.json`, 
+ //      $http.put(`${FIREBASE_CONFIG.databaseURL}/records/${record.id}.json`, 
  //        JSON.stringify({
- //          name: address.name,
- //          street_address: address.street_address,
- //          city: address.city,
- //          state: address.state,
- //          photo: address.photo,
- //          uid: address.uid
+ //          name: record.name,
+ //          artist: record.artist,
+ //          purchase_location: record.purchase_location,
+ //          photo: record.photo,
+ //          uid: record.uid
  //      })
  //      ).then((results) => {
  //          resolve(results);
@@ -91,9 +90,9 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
  //    });
  //  };
 
- //  let deletz = (addressId) => {
+ //  let deletz = (recordId) => {
  //    return $q ((resolve, reject) => {
- //      $http.delete(`${FIREBASE_CONFIG.databaseURL}/addresses/${addressId}.json`)
+ //      $http.delete(`${FIREBASE_CONFIG.databaseURL}/records/${recordId}.json`)
  //      .then((results) => {
  //        resolve(results);
  //      }).catch((error) => {
@@ -103,6 +102,6 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
  //  };
 
 
-return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum};
+return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum, postNewRecord:postNewRecord};
 
 });
