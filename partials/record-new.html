@@ -1,4 +1,4 @@
-<!-- <input type="image" ng-model="selectedRecordInfo.photo" ng-src="selectedRecordInfo.image[3]['#text']"> -->
+<input type="image" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">
 <input type="text" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
 <input type="text" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
 <input type="text" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">

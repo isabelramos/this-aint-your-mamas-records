@@ -5,11 +5,10 @@ app.controller("RecordNewCtrl", function($rootScope, $http, $location, $q, $scop
     $scope.addedRecordInfo = {
     	name: $scope.selectedRecordInfo.name,
     	artist: $scope.selectedRecordInfo.artist,
-    	photo: $scope.selectedRecordInfo.photo
+    	image: $scope.selectedRecordInfo.image[3]["#text"]
     };
 
     $scope.addNewRecord = () => {
-    	$scope.addedRecordInfo.photo = "test";
     	$scope.addedRecordInfo.uid = $rootScope.user.uid;
     		RecordFactory.postNewRecord($scope.addedRecordInfo).then(() => {
       			$scope.addedRecordInfo = {};

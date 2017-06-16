@@ -5,56 +5,56 @@
                 "name": "Grace Under Pressure",
                 "artist": "Rush",
                 "purchase_location": "Luna Records",
-                "photo": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
+                "image": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
                 "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             },
             "record1": {
                 "name": "Glass Houses",
                 "artist": "Billy Joel",
                 "purchase_location": "Yesterday & Today Records",
-                "photo": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
                 "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             },
             "record2": {
                 "name": "Tango in the Night",
                 "artist": "Fleetwood Mac",
                 "purchase_location": "Grimey's New & Preloved Music",
-                "photo": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
                 "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             },
             "record3": {
                 "name": "After Laughter",
                 "artist": "Paramore",
                 "purchase_location": "Grimey's New & Preloved Music",
-                "photo": "https://artistxite.com/imgcache/album/006/404/006404544_500.jpg",
+                "image": "https://artistxite.com/imgcache/album/006/404/006404544_500.jpg",
                 "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
             },
             "record4": {
                 "name": "Deja Entendu",
                 "artist": "Brand New",
                 "purchase_location": "Radioactive Records",
-                "photo": "http://diymag.com/media/img/Artists/B/Brand_New/_1500xAUTO_crop_center-center_75/Brand-New-Deja.jpg",
+                "image": "http://diymag.com/media/img/Artists/B/Brand_New/_1500xAUTO_crop_center-center_75/Brand-New-Deja.jpg",
                 "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
             },
             "record5": {
                 "name": "Riot!",
                 "artist": "Paramore",
                 "purchase_location": "Radioactive Records",
-                "photo": "http://cps-static.rovicorp.com/3/JPG_500/MI0000/692/MI0000692586.jpg?partner=allrovi.com",
+                "image": "http://cps-static.rovicorp.com/3/JPG_500/MI0000/692/MI0000692586.jpg?partner=allrovi.com",
                 "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
             },
             "record6": {
                 "name": "Folie à Deux",
                 "artist": "Fall Out Boy",
                 "purchase_location": "Sweat Records",
-                "photo": "https://images.genius.com/a5a70f85982ef02a6370fbf5b0575311.953x953x1.jpg",
+                "image": "https://images.genius.com/a5a70f85982ef02a6370fbf5b0575311.953x953x1.jpg",
                 "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
             },
             "record7": {
                 "name": "Tragic Kingdom",
                 "artist": "No Doubt",
                 "purchase_location": "Sweat Records",
-                "photo": "http://www.billboard.com/files/media/No-Doubt-Tragic-Kingdom-album-covers-billboard-1000x1000.jpg",
+                "image": "http://www.billboard.com/files/media/No-Doubt-Tragic-Kingdom-album-covers-billboard-1000x1000.jpg",
                 "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
             }
     },
