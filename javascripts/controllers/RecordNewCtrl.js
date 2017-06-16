@@ -2,12 +2,17 @@ app.controller("RecordNewCtrl", function($rootScope, $http, $location, $q, $scop
 
     $scope.selectedRecordInfo = RecordFactory.getLastSelectedAlbum();
 
+    $scope.addedRecordInfo = {
+    	name: $scope.selectedRecordInfo.name,
+    	artist: $scope.selectedRecordInfo.artist,
+    	photo: $scope.selectedRecordInfo.photo
+    };
+
     $scope.addNewRecord = () => {
-    	$scope.selectedRecordInfo.photo = "test";
-    	$scope.selectedRecordInfo.purchase_location = "test";
-    	$scope.selectedRecordInfo.uid = $rootScope.user.uid;
-    		RecordFactory.postNewRecord($scope.selectedRecordInfo).then(() => {
-      			$scope.selectedRecordInfo = {};
+    	$scope.addedRecordInfo.photo = "test";
+    	$scope.addedRecordInfo.uid = $rootScope.user.uid;
+    		RecordFactory.postNewRecord($scope.addedRecordInfo).then(() => {
+      			$scope.addedRecordInfo = {};
         		$location.url("/record/list");
     		}).catch((error) => {
      		console.log("add error", error);
