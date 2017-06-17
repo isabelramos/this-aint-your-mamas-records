@@ -91,18 +91,18 @@ app.factory("RecordFactory", function($http, $q, $routeParams, FIREBASE_CONFIG, 
     });
   };
 
- //  let deletz = (recordId) => {
- //    return $q ((resolve, reject) => {
- //      $http.delete(`${FIREBASE_CONFIG.databaseURL}/records/${recordId}.json`)
- //      .then((results) => {
- //        resolve(results);
- //      }).catch((error) => {
- //        reject(error);
- //      });
- //    });
- //  };
+  let deletz = (recordId) => {
+    return $q ((resolve, reject) => {
+      $http.delete(`${FIREBASE_CONFIG.databaseURL}/records/${recordId}.json`)
+      .then((results) => {
+        resolve(results);
+      }).catch((error) => {
+        reject(error);
+      });
+    });
+  };
 
 
-return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum, postNewRecord:postNewRecord, editRecord:editRecord};
+return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum, postNewRecord:postNewRecord, editRecord:editRecord, deletz:deletz};
 
 });

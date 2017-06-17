@@ -3,6 +3,7 @@ app.controller("RecordListCtrl", function($rootScope, $routeParams, $scope, Reco
 
 	let getRecords = () => {
     	RecordFactory.getRecordList($rootScope.user.uid).then((recordz) => {
+        console.log("getRecords", Date.now())
     		$scope.records = recordz;
             console.log(recordz);
     	}).catch((error) => {
@@ -11,15 +12,5 @@ app.controller("RecordListCtrl", function($rootScope, $routeParams, $scope, Reco
   	};
 
 	getRecords();
-
-
- //    $scope.deleteRecord = (id) => {
- //    	RecordFactory.deletz(id).then(() => {
- //    		getRecords();
- //    	}).catch((error) => {
- //    		console.log("deleteRecord error", error);
- //    	});
- //    };
-
 
 });

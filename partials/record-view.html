@@ -10,7 +10,7 @@
     	<br>
     	{{selectedRecord.purchase_location}}
     	<a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn btn-info">EDIT</button></a>
-        <a><button class="btn btn-danger">DELETE</button></a>
+        <a><button class="btn btn-danger" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
     </div>
   </div>
 </div>

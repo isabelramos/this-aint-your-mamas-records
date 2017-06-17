@@ -1,4 +1,4 @@
-app.controller("RecordViewCtrl", function($routeParams, $scope, RecordFactory) {
+app.controller("RecordViewCtrl", function($location, $routeParams, $scope, RecordFactory) {
 
   $scope.selectedRecord = {};
 
@@ -7,5 +7,15 @@ app.controller("RecordViewCtrl", function($routeParams, $scope, RecordFactory) {
   }).catch((error) => {
   	console.log("getSingleRecord error", error);
   });
+
+    $scope.deleteRecord = (id) => {
+    	console.log("id", id);
+    	RecordFactory.deletz(id).then(() => {
+	  		console.log("deleteRecord", Date.now());
+    		$location.url("/record/list");
+    	}).catch((error) => {
+    		console.log("deleteRecord error", error);
+    	});
+    };
 
 });
