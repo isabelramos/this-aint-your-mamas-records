@@ -1,20 +1,18 @@
-<div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="thumbnail">
-        	<img src="{{selectedRecord.image}}">
-        	{{selectedRecord.name}}
-        	<br>
-        	{{selectedRecord.artist}}
-        	<br>
-        	PURCHASE LOCATION:
-        	<br>
-        	{{selectedRecord.purchase_location}}
-            <div ng-if="!isFriendProfile">
-        	   <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn btn-info">EDIT</button></a>
-                <a><button class="btn btn-danger" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
-            </div>
+<div class="row">
+  <div class="col-md-3">
+    <div class="thumbnail">
+    	<img src="{{selectedRecord.image}}">
+    	{{selectedRecord.name | makeTextUppercase}}
+    	<br>
+    	{{selectedRecord.artist | makeTextUppercase}}
+    	<br>
+    	PURCHASE LOCATION:
+    	<br>
+    	{{selectedRecord.purchase_location | makeTextUppercase}}
+        <div ng-if="!isFriendProfile">
+    	   <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn btn-info">EDIT</button></a>
+            <a><button class="btn btn-danger" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
         </div>
-      </div>
     </div>
+  </div>
 </div>
