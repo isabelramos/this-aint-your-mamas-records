@@ -9,9 +9,7 @@ app.controller("RecordViewCtrl", function($location, $routeParams, $scope, Recor
   });
 
     $scope.deleteRecord = (id) => {
-    	console.log("id", id);
     	RecordFactory.deletz(id).then(() => {
-	  		console.log("deleteRecord", Date.now());
     		$location.url("/record/list");
     	}).catch((error) => {
     		console.log("deleteRecord error", error);

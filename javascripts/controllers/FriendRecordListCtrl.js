@@ -1,4 +1,7 @@
-app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) { 
+app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) {
+
+  $scope.isFriendProfile = $routeParams.uid;
+
   $scope.records = [];
   $scope.friend = [];
 

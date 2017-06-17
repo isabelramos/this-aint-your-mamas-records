@@ -4,11 +4,25 @@
 	</div>
 </div>
 
-<div class="row" ng-repeat="record in records">
-  <div class="col-md-3">
-    <a ng-href="#!/record/view/{{record.id}}" class="thumbnail">
-      <img src="{{record.image}}">
-    </a>
-  </div>
+<div ng-if="!isFriendProfile">
+	<div class="row" ng-repeat="record in records">
+	  <div class="col-md-3">
+	    <a ng-href="#!/record/view/{{record.id}}" class="thumbnail">
+	      <img src="{{record.image}}">
+	    </a>
+	  </div>
+	</div>
 </div>
 
+<div ng-if="isFriendProfile">
+	<div class="friend-collection-pic"><img src="{{friend.profile_pic}}"></div>
+	<h4>{{friend.username}}'s COLLECTION</h4>
+
+	<div class="row" ng-repeat="record in records">
+	  <div class="col-md-3">
+	    <a ng-href="#!/record/friend/{{friend.uid}}/view/{{record.id}}" class="thumbnail">
+	      <img src="{{record.image}}">
+	    </a>
+	  </div>
+	</div>
+</div>

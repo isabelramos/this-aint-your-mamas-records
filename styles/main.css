@@ -73,3 +73,9 @@ input {
   padding: 20px;
   background: white;
   min-height: 410px; }
+
+.friend-collection-pic img {
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%; }
