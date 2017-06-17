@@ -1,4 +1,4 @@
-app.controller("RecordListCtrl", function($rootScope, $scope, RecordFactory) {
+app.controller("RecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) {
 	$scope.records = [];
 
 	let getRecords = () => {
@@ -13,11 +13,11 @@ app.controller("RecordListCtrl", function($rootScope, $scope, RecordFactory) {
 	getRecords();
 
 
- //    $scope.deleteAddress = (id) => {
- //    	AddressFactory.deletz(id).then(() => {
- //    		getAddresses();
+ //    $scope.deleteRecord = (id) => {
+ //    	RecordFactory.deletz(id).then(() => {
+ //    		getRecords();
  //    	}).catch((error) => {
- //    		console.log("deleteAddress error", error);
+ //    		console.log("deleteRecord error", error);
  //    	});
  //    };
 

@@ -1,4 +1,4 @@
-app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG) {
+app.factory("RecordFactory", function($http, $q, $routeParams, FIREBASE_CONFIG, LASTFM_CONFIG) {
 
   let lastSelectedAlbum  = {};
 
@@ -71,6 +71,7 @@ app.factory("RecordFactory", function($http, $q, FIREBASE_CONFIG, LASTFM_CONFIG)
       		});
     	});
   	};
+
 
  //  let editRecord = (record) => {
  //    return $q ((resolve, reject) => {

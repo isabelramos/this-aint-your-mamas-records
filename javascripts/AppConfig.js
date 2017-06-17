@@ -48,6 +48,11 @@ app.config(function($routeProvider) {
       controller: "RecordListCtrl",
       resolve: {isAuth}
     })
+    .when("/record/friend/:uid/list", {
+      templateUrl: "partials/record-list.html",
+      controller: "FriendRecordListCtrl",
+      resolve: {isAuth}
+    })
     .when("/record/new", {
       templateUrl: "partials/record-new.html",
       controller: "RecordNewCtrl",
@@ -71,16 +76,6 @@ app.config(function($routeProvider) {
     .when("/view-friends", {
       templateUrl: "partials/view-friends.html",
       controller: "ViewFriendsCtrl",
-      resolve: {isAuth}
-    })
-    .when("/view-friends/collection", {
-      templateUrl: "partials/view-friends-collection.html",
-      controller: "ViewFriendsCollectionCtrl",
-      resolve: {isAuth}
-    })
-    .when("/view-friends/collection/:id", {
-      templateUrl: "partials/view-friends-record.html",
-      controller: "ViewFriendsRecordCtrl",
       resolve: {isAuth}
     })
     .when("/logout", {
