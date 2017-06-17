@@ -73,23 +73,23 @@ app.factory("RecordFactory", function($http, $q, $routeParams, FIREBASE_CONFIG, 
   	};
 
 
- //  let editRecord = (record) => {
- //    return $q ((resolve, reject) => {
- //      $http.put(`${FIREBASE_CONFIG.databaseURL}/records/${record.id}.json`, 
- //        JSON.stringify({
- //          name: record.name,
- //          artist: record.artist,
- //          purchase_location: record.purchase_location,
- //          photo: record.photo,
- //          uid: record.uid
- //      })
- //      ).then((results) => {
- //          resolve(results);
- //      }).catch((error) => {
- //          reject(error);
- //        });
- //    });
- //  };
+  let editRecord = (record) => {
+    return $q ((resolve, reject) => {
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/records/${record.id}.json`, 
+        JSON.stringify({
+          name: record.name,
+          artist: record.artist,
+          purchase_location: record.purchase_location,
+          image: record.image,
+          uid: record.uid
+      })
+      ).then((results) => {
+          resolve(results);
+      }).catch((error) => {
+          reject(error);
+        });
+    });
+  };
 
  //  let deletz = (recordId) => {
  //    return $q ((resolve, reject) => {
@@ -103,6 +103,6 @@ app.factory("RecordFactory", function($http, $q, $routeParams, FIREBASE_CONFIG, 
  //  };
 
 
-return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum, postNewRecord:postNewRecord};
+return {getSearchedRecordArt:getSearchedRecordArt, getRecordList:getRecordList, getSingleRecord:getSingleRecord, getSelectedRecordInfo:getSelectedRecordInfo, getLastSelectedAlbum:getLastSelectedAlbum, postNewRecord:postNewRecord, editRecord:editRecord};
 
 });

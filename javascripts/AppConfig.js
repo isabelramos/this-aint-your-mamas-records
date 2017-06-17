@@ -53,6 +53,11 @@ app.config(function($routeProvider) {
       controller: "FriendRecordListCtrl",
       resolve: {isAuth}
     })
+    .when("/record/friend/:uid/view/:id", {
+      templateUrl: "partials/record-view.html",
+      controller: "FriendRecordViewCtrl",
+      resolve: {isAuth}
+    })
     .when("/record/new", {
       templateUrl: "partials/record-new.html",
       controller: "RecordNewCtrl",

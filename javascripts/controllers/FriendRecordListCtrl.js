@@ -1,11 +1,10 @@
- app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) { 
-
+app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) { 
   $scope.records = [];
   $scope.friend = [];
 
   UserFactory.getUser($routeParams.uid).then((user) => {
-    console.log("user", user);
       $scope.friend = user;
+      console.log("$scope.friend", $scope.friend);
   }).catch((error) => {
     console.log("error", error);
   });

@@ -1,4 +1,4 @@
-app.controller("RecordViewCtrl", function($routeParams, $scope, RecordFactory) {
+app.controller("FriendRecordViewCtrl", function($routeParams, $scope, RecordFactory) {
 
   $scope.selectedRecord = {};
 
