@@ -1,8 +1,18 @@
 <input type="text" style="text-transform:uppercase" name="" placeholder="SEARCH FOR RECORDS" ng-model="userRecordSearch">
-<a class="btn btn-default" ng-click="searchRecordsButton()">SEARCH</a>
+<a class="btn no-border-btn" ng-click="searchRecordsButton()">SEARCH</a>
 
-<div ng-repeat="info in searchedArtistAndTitleArray track by $index">
-<img src="{{info.searchedAlbumArt}}">
-{{info.searchedArtistAlbumTitle | makeTextUppercase}} {{info.searchedArtistName | makeTextUppercase}} 
-<a class="btn btn-default" ng-click="viewSelectedRecord(info.searchedArtistAlbumTitle, info.searchedArtistName)">SELECT</a>
-</div> 
+	<div class="container">
+		<div class="row">
+		  <div class="col-sm-3" ng-repeat="info in searchedArtistAndTitleArray track by $index">
+		  	<div class="thumbnail-container">
+			    <div class="thumbnail">
+			      	<img src="{{info.searchedAlbumArt}}" class="thumbnail-art">
+			      	<span class="thumbnail-effect">
+			      		<a class="btn" ng-click="viewSelectedRecord(info.searchedArtistAlbumTitle, info.searchedArtistName)">SELECT</a>
+			      	</span>
+			    </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>

@@ -2,17 +2,17 @@
   <div class="col-md-3">
     <div class="thumbnail">
     	<img src="{{selectedRecord.image}}">
-    	{{selectedRecord.name | makeTextUppercase}}
-    	<br>
-    	{{selectedRecord.artist | makeTextUppercase}}
-    	<br>
-    	PURCHASE LOCATION:
-    	<br>
-    	{{selectedRecord.purchase_location | makeTextUppercase}}
-        <div ng-if="!isFriendProfile">
-    	   <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn btn-info">EDIT</button></a>
-            <a><button class="btn btn-danger" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
-        </div>
     </div>
+        {{selectedRecord.name | makeTextUppercase}}
+        <br>
+        {{selectedRecord.artist | makeTextUppercase}}
+        <br>
+        PURCHASE LOCATION:
+        <br>
+        {{selectedRecord.purchase_location | makeTextUppercase}}
+        <div ng-if="!isFriendProfile">
+           <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn no-border-btn">EDIT</button></a>
+            <a><button class="btn no-border-btn" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
+        </div>
   </div>
 </div>
