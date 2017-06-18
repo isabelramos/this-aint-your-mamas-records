@@ -1,8 +1,23 @@
-<div class="row" ng-repeat="user in users">
-  <div class="col-md-3">
+<!-- <div class="row">
+  <div class="col-sm-3" ng-repeat="user in users">
     <a class="thumbnail">
       <img src="{{user.profile_pic}}">
     </a>
 	<a class="btn btn-default" ng-href="#!/record/friend/{{user.uid}}/list">VIEW COLLECTION</a>
   </div>
+</div> -->
+
+<div class="container">
+	<div class="row">
+	  <div class="col-sm-3" ng-repeat="user in users">
+	  	<div class="thumbnail-container">
+		    <div class="thumbnail">
+		      	<img src="{{user.profile_pic}}" class="thumbnail-art">
+		      	<span class="thumbnail-effect">
+		      		<a class="btn btn-default" ng-href="#!/record/friend/{{user.uid}}/list">VIEW PROFILE</a>
+		      	</span>
+		    </div>
+		</div>
+	  </div>
+	</div>
 </div>
