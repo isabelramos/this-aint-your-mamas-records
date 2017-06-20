@@ -46,11 +46,13 @@ nav {
   text-decoration: none;
 }
 
-input {
+.search-bar {
   color: $slategray;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-input:focus {
+.search-bar:focus {
   color: $slategray;
   opacity: 0.8;
   transition: .5s ease; 
@@ -121,8 +123,8 @@ p {
 }
 
 .toggled {
-    position: absolute;
-    margin-right: -250px;
+  position: absolute;
+  margin-right: -250px;
 }
 
 .profile-column .profile-sidebar {
@@ -134,7 +136,7 @@ p {
 }
 
 .profile-sidebar {
-  padding: 20px 0 10px 0;
+  padding: 30px 0 10px 0;
   background: white;
 }
 
@@ -155,7 +157,7 @@ p {
 
 .profile-usertitle-name {
   color: $slategray;
-  font-size: 16px;
+  font-size: 2rem;
   font-weight: 600;
   margin-bottom: 7px;
 }
@@ -170,20 +172,15 @@ p {
   text-align: center;
 }
 
-/*.profile-usermenu .nav:hover {
-	background-color: none;
-	opacity: .5;
-}*/
-
 ul li a {
   color: $slategray;
 }
 
 ul li a:hover {
   color: $slategray;
-  background-color: none !important;
+  background-color: white !important;
   transition: .5s ease;
-  opacity: 0.8;
+  opacity: 0.3;
 }
 
 .profile-usermenu ul li a i {
@@ -197,9 +194,24 @@ ul li a:hover {
   min-height: 410px;
 }
 
+.pie-logo {
+  width: 100px;
+  padding: 20px 0;
+}
+
+.friend-collection-pic {
+  text-align: center;
+}
+
 .friend-collection-pic img {
-  display: inline-block;
   width: 75px;
   height: 75px;
   border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.friend-username {
+  display: inline-block;
+  margin-top: 15px;
+
 }
