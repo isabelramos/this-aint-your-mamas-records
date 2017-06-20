@@ -11,10 +11,6 @@ body {
   color: white;
   letter-spacing: 0.4rem; }
 
-.primary-logo img {
-  width: 50%;
-  height: 50%; }
-
 nav {
   padding-top: 15px; }
 
@@ -94,6 +90,9 @@ p {
   text-align: center;
   color: #726967; }
 
+.login-form {
+  margin-top: 15%; }
+
 .login-input {
   border-style: none;
   color: white;
@@ -159,12 +158,16 @@ ul li a:hover {
   background: white;
   min-height: 410px; }
 
+.primary-logo {
+  width: 350px;
+  margin-top: 10%; }
+
 .pie-logo {
   width: 100px;
   padding: 20px 0; }
 
 .friend-collection-pic {
-  text-align: center; }
+  justify-content: center; }
 
 .friend-collection-pic img {
   width: 75px;
