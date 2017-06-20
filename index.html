@@ -12,16 +12,11 @@
 	<body ng-app="RecordApp">
 
 		<div ng-include="'partials/navbar.html'"></div>
-		
-<!-- 		<div class="container">
-			<div class="row">
-				<div class="col-xs-8 col-xs-offset-2" ng-view>
 
-				</div>
-			</div>
-		</div> -->
+		<div class="container">
+		    <div ng-view></div>	
+		</div>
 
-		<div ng-view></div>
 
 	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
 	<script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>

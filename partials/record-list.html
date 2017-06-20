@@ -1,13 +1,12 @@
 <div class="row">
-	<div class="col-xs-6">
-		<input type="text" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
-	</div>
-</div>
+	<div class="col-xs-9 col-md-3" ng-include="'partials/user-side-profile.html'"></div>
 
-<div ng-if="!isFriendProfile">
-	<div class="container">
+	<div class="col-xs-12 col-sm-6 col-md-8" ng-if="!isFriendProfile">
 		<div class="row">
-		  <div class="col-sm-3" ng-repeat="record in records | filter: searchText">
+			<input type="text" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
+		</div>
+
+		<div class="col-sm-4" ng-repeat="record in records | filter: searchText">
 		  	<div class="thumbnail-container">
 			    <div class="thumbnail">
 			      	<img src="{{record.image}}" class="thumbnail-art">
@@ -16,10 +15,12 @@
 			      	</span>
 			    </div>
 			</div>
-		  </div>
 		</div>
 	</div>
 </div>
+
+
+
 
 <div ng-if="isFriendProfile">
 

@@ -15,6 +15,11 @@ body {
   letter-spacing: 0.4rem;
 }
 
+.primary-logo img {
+  width: 50%;
+  height: 50%;
+}
+
 nav {
   padding-top: 15px;
 }
@@ -120,7 +125,7 @@ p {
     margin-right: -250px;
 }
 
-#profileCol .profile-sidebar{
+.profile-column .profile-sidebar {
   min-height: 410px;
 }
 
@@ -165,9 +170,20 @@ p {
   text-align: center;
 }
 
-.profile-usermenu .nav:hover {
+/*.profile-usermenu .nav:hover {
 	background-color: none;
 	opacity: .5;
+}*/
+
+ul li a {
+  color: $slategray;
+}
+
+ul li a:hover {
+  color: $slategray;
+  background-color: none !important;
+  transition: .5s ease;
+  opacity: 0.8;
 }
 
 .profile-usermenu ul li a i {

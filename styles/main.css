@@ -11,6 +11,10 @@ body {
   color: white;
   letter-spacing: 0.4rem; }
 
+.primary-logo img {
+  width: 50%;
+  height: 50%; }
+
 nav {
   padding-top: 15px; }
 
@@ -98,7 +102,7 @@ p {
   position: absolute;
   margin-right: -250px; }
 
-#profileCol .profile-sidebar {
+.profile-column .profile-sidebar {
   min-height: 410px; }
 
 .profile {
@@ -135,9 +139,18 @@ p {
   margin-top: 30px;
   text-align: center; }
 
-.profile-usermenu .nav:hover {
-  background-color: none;
-  opacity: .5; }
+/*.profile-usermenu .nav:hover {
+	background-color: none;
+	opacity: .5;
+}*/
+ul li a {
+  color: #726967; }
+
+ul li a:hover {
+  color: #726967;
+  background-color: none !important;
+  transition: .5s ease;
+  opacity: 0.8; }
 
 .profile-usermenu ul li a i {
   margin-right: 8px;
