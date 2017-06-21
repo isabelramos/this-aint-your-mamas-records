@@ -7,6 +7,17 @@ button:focus {
   outline: none;
 }
 
+.form-control:focus {
+  border-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/*.aligner {
+  display: flex;
+  justify-content: center;
+}*/
+
 body {
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
@@ -42,13 +53,13 @@ nav {
   text-decoration: none;
 }
 
-.search-bar {
+.input-field {
   color: $slategray;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-.search-bar:focus {
+.input-field:focus {
   color: $slategray;
   opacity: 0.8;
   transition: .5s ease; 
@@ -106,6 +117,15 @@ nav {
   opacity: 1;
 }
 
+.view-thumbnail {
+  margin-top: 15%;
+  margin-right: 2.5%;
+}
+
+.view-info {
+  margin-top: 20%;
+}
+
 p {
   text-align: center;
   color: $slategray;
@@ -113,13 +133,6 @@ p {
 
 .login-form {
   margin-top: 15%;
-}
-
-.login-input {
-	border-style: none;
-	color: white;
-	background-color: transparent;
-	border-bottom: 2px solid white; 
 }
 
 .toggled {
@@ -195,8 +208,9 @@ ul li a:hover {
 }
 
 .primary-logo {
-  width: 350px;
+  width: 425px;
   margin-top: 10%;
+  padding-left: 12.5%;
 }
 
 .pie-logo {

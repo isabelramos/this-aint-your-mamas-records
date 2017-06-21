@@ -4,6 +4,15 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+.form-control:focus {
+  border-color: white;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/*.aligner {
+  display: flex;
+  justify-content: center;
+}*/
 body {
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
@@ -33,12 +42,12 @@ nav {
   opacity: 0.8;
   text-decoration: none; }
 
-.search-bar {
+.input-field {
   color: #726967;
   padding: 10px;
   margin-bottom: 20px; }
 
-.search-bar:focus {
+.input-field:focus {
   color: #726967;
   opacity: 0.8;
   transition: .5s ease; }
@@ -87,18 +96,19 @@ nav {
 .thumbnail-container:hover .thumbnail-effect {
   opacity: 1; }
 
+.view-thumbnail {
+  margin-top: 15%;
+  margin-right: 2.5%; }
+
+.view-info {
+  margin-top: 20%; }
+
 p {
   text-align: center;
   color: #726967; }
 
 .login-form {
   margin-top: 15%; }
-
-.login-input {
-  border-style: none;
-  color: white;
-  background-color: transparent;
-  border-bottom: 2px solid white; }
 
 .toggled {
   position: absolute;
@@ -160,8 +170,9 @@ ul li a:hover {
   min-height: 410px; }
 
 .primary-logo {
-  width: 350px;
-  margin-top: 10%; }
+  width: 425px;
+  margin-top: 10%;
+  padding-left: 12.5%; }
 
 .pie-logo {
   width: 100px;
