@@ -3,7 +3,7 @@
 	  <div class="col-sm-3" ng-repeat="user in users">
 	  	<div class="thumbnail-container">
 		    <div class="thumbnail">
-		      	<img src="{{user.profile_pic}}" class="thumbnail-art">
+		      	<img ng-src="{{user.profile_pic}}" class="thumbnail-art">
 		      	<span class="thumbnail-effect">
 		      		<a class="btn" ng-href="#!/record/friend/{{user.uid}}/list">VIEW PROFILE</a>
 		      	</span>

@@ -5,7 +5,8 @@ button:focus {
   outline: none; }
 
 body {
-  /*  background-image: url(/images/25remix-mojave-custom1.jpg);*/
+  background-image: url(/images/background.jpg);
+  background-repeat: no-repeat;
   background-color: #726967;
   font-family: 'Righteous', cursive;
   color: white;
