@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
+
+	<div class="col-xs-12 col-sm-6 col-md-8">
+		<div class="row">
+			<input type="text" class="col-xs-12 col-md-6 col-md-offset-2 input-field search-input" style="text-transform:uppercase" name="" placeholder="SEARCH FOR RECORDS" ng-model="userRecordSearch">
+			<a class="btn no-border-btn" ng-click="searchRecordsButton()">SEARCH</a>
+		</div>
+
+		<div class="col-xs-12 col-sm-4" ng-repeat="info in searchedArtistAndTitleArray track by $index">
+		  	<div class="thumbnail-container">
+			    <div class="thumbnail">
+			      	<img src="{{info.searchedAlbumArt}}" class="thumbnail-art">
+			      	<span class="thumbnail-effect">
+			      		<a class="btn" ng-click="viewSelectedRecord(info.searchedArtistAlbumTitle, info.searchedArtistName)">SELECT</a>
+			      	</span>
+			    </div>
+			</div>
+		</div>
+	</div>
+</div> <!-- row -->

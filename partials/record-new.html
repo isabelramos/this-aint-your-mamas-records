@@ -1,0 +1,35 @@
+<!-- <input type="image" class="thumbnail" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">
+<input type="text" style="text-transform:uppercase" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
+<input type="text" style="text-transform:uppercase" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
+<input type="text" style="text-transform:uppercase" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">
+<a class="btn no-border-btn" ng-click="addNewRecord()">ADD TO COLLECTION</a> -->
+
+
+<div class="row">
+    <div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
+
+
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="row">
+            <img class="col-xs-12 col-sm-4 col-sm-offset-4 thumbnail" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">	
+        </div>
+
+		<div class="row">
+			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
+		</div>
+
+		<div class="row">
+			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
+		</div>
+
+		<div class="row">
+			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">
+		</div>
+
+		<div class="row">
+			<a class="btn no-border-btn col-xs-12 col-sm-4 col-sm-offset-6" ng-click="addNewRecord()">ADD TO COLLECTION</a>
+		</div>
+
+    </div>
+
+</div> <!-- row -->

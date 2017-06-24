@@ -1,0 +1,98 @@
+{
+    "records": {
+        
+            "record0": {
+                "name": "Grace Under Pressure",
+                "artist": "Rush",
+                "purchase_location": "Luna Records",
+                "image": "https://www.metal-archives.com/images/3/5/8/3/3583.jpg",
+                "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
+            },
+            "record1": {
+                "name": "Glass Houses",
+                "artist": "Billy Joel",
+                "purchase_location": "Yesterday & Today Records",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/51fN%2BUTdB0L.jpg",
+                "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
+            },
+            "record2": {
+                "name": "Tango in the Night",
+                "artist": "Fleetwood Mac",
+                "purchase_location": "Grimey's New & Preloved Music",
+                "image": "https://images-na.ssl-images-amazon.com/images/I/51zlXKfGAbL.jpg",
+                "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
+            },
+            "record3": {
+                "name": "After Laughter",
+                "artist": "Paramore",
+                "purchase_location": "Grimey's New & Preloved Music",
+                "image": "https://artistxite.com/imgcache/album/006/404/006404544_500.jpg",
+                "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1"
+            },
+            "record4": {
+                "name": "Deja Entendu",
+                "artist": "Brand New",
+                "purchase_location": "Radioactive Records",
+                "image": "http://diymag.com/media/img/Artists/B/Brand_New/_1500xAUTO_crop_center-center_75/Brand-New-Deja.jpg",
+                "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
+            },
+            "record5": {
+                "name": "Riot!",
+                "artist": "Paramore",
+                "purchase_location": "Radioactive Records",
+                "image": "http://cps-static.rovicorp.com/3/JPG_500/MI0000/692/MI0000692586.jpg?partner=allrovi.com",
+                "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
+            },
+            "record6": {
+                "name": "Folie à Deux",
+                "artist": "Fall Out Boy",
+                "purchase_location": "Sweat Records",
+                "image": "https://images.genius.com/a5a70f85982ef02a6370fbf5b0575311.953x953x1.jpg",
+                "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
+            },
+            "record7": {
+                "name": "Tragic Kingdom",
+                "artist": "No Doubt",
+                "purchase_location": "Sweat Records",
+                "image": "http://www.billboard.com/files/media/No-Doubt-Tragic-Kingdom-album-covers-billboard-1000x1000.jpg",
+                "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2"
+            }
+    },
+    "users" : {
+        "user0": {
+            "uid": "uGXHpR7Ll9ZQJDzcUVPlu09Dawt1",
+            "profile_pic": "https://avatars1.githubusercontent.com/u/25022316?v=3&s=400",
+            "username": "THEVINYLNERD"
+        },
+        "user1": {
+            "uid": "dRjeSffKstNqJDpuKlahP13Nrtq2",
+            "profile_pic": "https://pbs.twimg.com/profile_images/666057207310647296/gjNgRDZp.jpg",
+            "username": "NATMONTANER"
+        },
+        "user2": {
+            "uid": "DbAyZN7XcLQXzb9M6jNztJ8K86m2",
+            "profile_pic": "https://pbs.twimg.com/profile_images/876544594590048256/VpAIbmgY.jpg",
+            "username": "THETWINSICLE"
+        },
+        "user3": {
+            "uid": "IBajrmMTVdXwyQYRc8cCYeDuRcf1",
+            "profile_pic": "https://pbs.twimg.com/profile_images/756744037961465856/MsHDAIoa.jpg",
+            "username": "CARITAFRITA"
+        },
+        "user4": {
+            "uid": "p4fLxK5zhOeRXPku09Afc5M9CGJ2",
+            "profile_pic": "https://pbs.twimg.com/profile_images/737410790966190080/9VtWjt_M.jpg",
+            "username": "LISANNIFICATION"
+        },
+        "user5": {
+            "uid": "iqbfW06wrBem7HF9habudruGMWh1",
+            "profile_pic": "https://pbs.twimg.com/profile_images/492854217879474177/c3MTI6rB.jpeg",
+            "username": "DEREKISHERE"
+        },
+        "user6": {
+            "uid": "YRHSU29rcVhW4w3cZnE04hut8e02",
+            "profile_pic": "https://pbs.twimg.com/profile_images/825119902818324481/MrSavQXj.jpg",
+            "username": "RADICALCARO"
+        }
+    }
+}
