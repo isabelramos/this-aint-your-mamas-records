@@ -7,7 +7,7 @@
 		</div>
 
 
-			<div class="col-xs-12 col-sm-4" ng-repeat="user in users | filter: searchText">
+			<div class="col-xs-12 col-sm-4" ng-repeat="user in users | filter: searchText | filter: {uid: '!'+isCurrentUser}">
 			  	<div class="thumbnail-container">
 				    <div class="thumbnail">
 				      	<img ng-src="{{user.profile_pic}}" class="thumbnail-art">
