@@ -17,12 +17,23 @@
             </div>
             <div ng-if="!isFriendProfile">
                <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn no-border-btn">EDIT</button></a>
-                <a><button class="btn no-border-btn" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
+                <a><button class="btn no-border-btn" ng-click="activateAreYouSureModal()">DELETE</button></a>
             </div>
             <div ng-if="isFriendProfile">
                 <a href="javascript:void(0);" ng-click="backToCollectionButton()"><button class="btn no-border-btn">BACK TO COLLECTION</button></a>
             </div>
-         </div>
+        </div>
+
+        <div class="errormodal" ng-show="deleteButtonClicked">
+            <!-- <div class="mockmodal-content-with-btn"> -->
+                <h4>ARE YOU SURE YOU WANT TO DELETE THIS RECORD?</h4>
+                <div class="row">
+                    <button class="btn" ng-click="closeModal()">NEVERMIND</button>
+                    <button class="btn" ng-click="deleteRecord(selectedRecord.id)">YES</button>
+                </div>
+<!--             </div> -->
+        </div>
+
     </div>
 
 </div> <!-- row -->
