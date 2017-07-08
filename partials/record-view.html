@@ -19,6 +19,9 @@
                <a ng-href="#!/record/edit/{{selectedRecord.id}}"><button class="btn no-border-btn">EDIT</button></a>
                 <a><button class="btn no-border-btn" ng-click="deleteRecord(selectedRecord.id)">DELETE</button></a>
             </div>
+            <div ng-if="isFriendProfile">
+                <a href="javascript:void(0);" ng-click="backToCollectionButton()"><button class="btn no-border-btn">BACK TO COLLECTION</button></a>
+            </div>
          </div>
     </div>
 

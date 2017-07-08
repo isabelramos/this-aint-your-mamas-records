@@ -62,7 +62,9 @@ nav {
 .no-border-btn {
   background-color: white;
   border: none;
-  color: #726967; }
+  color: #726967;
+  padding-left: 17px;
+  letter-spacing: 0.4rem; }
 
 .btn:hover {
   color: #726967; }
@@ -177,7 +179,7 @@ ul li a:hover {
 .primary-logo {
   width: 425px;
   margin-top: 10%;
-  padding-left: 12.5%; }
+  padding-left: 10%; }
 
 .pie-logo {
   width: 100px;

@@ -1,7 +1,6 @@
-app.controller("FriendRecordViewCtrl", function($routeParams, $scope, RecordFactory) {
+app.controller("FriendRecordViewCtrl", function($window, $routeParams, $scope, RecordFactory) {
 
-  $scope.isFriendProfile = $routeParams.uid;	
-
+  $scope.isFriendProfile = $routeParams.uid;
   $scope.selectedRecord = {};
 
   RecordFactory.getSingleRecord($routeParams.id).then((results) => {
@@ -9,5 +8,9 @@ app.controller("FriendRecordViewCtrl", function($routeParams, $scope, RecordFact
   }).catch((error) => {
   	console.log("getSingleRecord error", error);
   });
+
+	$scope.backToCollectionButton = () => {
+		$window.history.back();
+	};
 
 });

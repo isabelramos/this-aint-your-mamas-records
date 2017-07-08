@@ -1,6 +1,7 @@
 app.controller("RecordViewCtrl", function($location, $routeParams, $scope, RecordFactory) {
 
   $scope.selectedRecord = {};
+  $scope.deleteButtonClicked = false;
 
   RecordFactory.getSingleRecord($routeParams.id).then((results) => {
   	$scope.selectedRecord = results.data;
