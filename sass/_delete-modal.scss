@@ -1,0 +1,19 @@
+@import "color";
+
+.delete-modal {
+	width: 300px;
+	height: 175px;
+    margin-top: 20%;
+    margin-left: 25%;
+	background-color: white;
+	opacity: 0.9;
+    box-shadow: 0px 0px 15px 1px rgba(114,105,103,0.25);
+    z-index: 1000;
+    position: absolute;
+    color: $slategray;
+    text-align: center;
+
+    h4 {
+    	line-height: 2.75rem;
+    }
+}
