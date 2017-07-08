@@ -1,8 +1,6 @@
-app.controller("FriendRecordViewCtrl", function($window, $routeParams, $scope, RecordFactory, UserFactory) {
+app.controller("FriendRecordViewCtrl", function($window, $routeParams, $scope, RecordFactory) {
 
-  $scope.isFriendProfile = $routeParams.uid;	
-  $scope.friend = [];
-
+  $scope.isFriendProfile = $routeParams.uid;
   $scope.selectedRecord = {};
 
   RecordFactory.getSingleRecord($routeParams.id).then((results) => {
