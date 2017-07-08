@@ -40,6 +40,7 @@ nav {
 
 .secondary-logo {
   color: white;
+  transition: .5s ease;
   font-size: 2rem;
   text-decoration: none !important;
 }
@@ -59,6 +60,7 @@ nav {
   color: $slategray;
   padding: 10px;
   margin-bottom: 20px;
+  transition: .5s ease;
 }
 
 .input-field:focus {
@@ -80,6 +82,7 @@ nav {
   color: $slategray;
   padding-left: 17px;
   letter-spacing: 0.4rem;
+  transition: .5s ease;
 }
 
 .btn:hover {
@@ -89,7 +92,7 @@ nav {
 .no-border-btn:hover {
   color: $slategray;
   opacity: 0.8;
-  transition: .5s ease; 
+  transition: .5s ease;
 }
 
 .search-input {
@@ -196,6 +199,7 @@ p {
 
 ul li a {
   color: $slategray;
+  transition: .5s ease;
 }
 
 ul li a:hover {
