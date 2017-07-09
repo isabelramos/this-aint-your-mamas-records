@@ -20,11 +20,13 @@
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
-  outline: none; }
-
-.form-control:focus {
-  border-color: white;
+a:focus,
+a:active,
+.btn:focus,
+.btn:active,
+.no-border-btn:focus,
+.no-border-btn:active {
+  outline: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
 
@@ -137,7 +139,7 @@ p {
   color: #726967; }
 
 .login-form {
-  margin-top: 15%; }
+  margin-top: 30%; }
 
 .toggled {
   position: absolute;
@@ -184,7 +186,8 @@ ul li a {
   color: #726967;
   transition: .5s ease; }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:visited {
   color: #726967;
   background-color: white !important;
   transition: .5s ease;
@@ -200,9 +203,9 @@ ul li a:hover {
   min-height: 410px; }
 
 .primary-logo {
-  width: 425px;
+  width: 375px;
   margin-top: 10%;
-  padding-left: 10%; }
+  /*  padding-left: 10%;*/ }
 
 .pie-logo {
   width: 100px;

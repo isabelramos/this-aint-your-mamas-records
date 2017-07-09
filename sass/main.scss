@@ -4,12 +4,13 @@
 input:focus,
 select:focus,
 textarea:focus,
-button:focus {
+a:focus,
+a:active,
+.btn:focus,
+.btn:active,
+.no-border-btn:focus,
+.no-border-btn:active {
   outline: none;
-}
-
-.form-control:focus {
-  border-color: white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -144,7 +145,7 @@ p {
 }
 
 .login-form {
-  margin-top: 15%;
+  margin-top: 30%;
 }
 
 .toggled {
@@ -202,7 +203,8 @@ ul li a {
   transition: .5s ease;
 }
 
-ul li a:hover {
+ul li a:hover,
+ul li a:visited {
   color: $slategray;
   background-color: white !important;
   transition: .5s ease;
@@ -221,9 +223,9 @@ ul li a:hover {
 }
 
 .primary-logo {
-  width: 425px;
+  width: 375px;
   margin-top: 10%;
-  padding-left: 10%;
+/*  padding-left: 10%;*/
 }
 
 .pie-logo {
