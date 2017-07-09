@@ -1,4 +1,4 @@
-app.controller("RecordNewCtrl", function($rootScope, $http, $location, $q, $scope, FIREBASE_CONFIG, RecordFactory) {
+app.controller("RecordNewCtrl", function($window, $rootScope, $http, $location, $q, $scope, FIREBASE_CONFIG, RecordFactory) {
 
     $scope.selectedRecordInfo = RecordFactory.getLastSelectedAlbum();
 
@@ -17,5 +17,9 @@ app.controller("RecordNewCtrl", function($rootScope, $http, $location, $q, $scop
      		console.log("add error", error);
    		});
  	 };
+   
+   $scope.backToRecordInfoButton = () => {
+      $window.history.back();
+   };
 
 });

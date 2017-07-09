@@ -23,17 +23,16 @@
                 <h5>PURCHASE LOCATION:</h5>
                 <h4>{{selectedRecord.purchase_location | makeTextUppercase}}</h4>
             </div>
+
             <div ng-if="!isFriendProfile">
                <a ng-href="#!/record/edit/{{selectedRecord.id}}"class="btn no-border-btn">EDIT</a>
                 <a class="btn no-border-btn" ng-click="activateAreYouSureModal()">DELETE</a>
             </div>
+
             <div ng-if="isFriendProfile">
                 <a href="javascript:void(0);" ng-click="backToCollectionButton()" class="btn no-border-btn">BACK TO COLLECTION</a>
             </div>
 
         </div>
-
-
     </div>
-
 </div> <!-- row -->

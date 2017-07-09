@@ -30,10 +30,6 @@ a:active,
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-/*.aligner {
-  display: flex;
-  justify-content: center;
-}*/
 body {
   background-image: url(/images/background.jpg);
   background-repeat: no-repeat;
