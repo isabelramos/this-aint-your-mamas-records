@@ -1,17 +1,18 @@
-<div class="container" ng-if="!user.uid">
-	<div class="row">
-	  <div class="col-xs-9 col-sm-6">
-	  	<img class="primary-logo img-responsive" src="/images/taymrecordslogo_white.png">
-	 	<h3>YOUR ONLINE VINYL DATABASE.</h3>
-	  </div>
+	<div class="row" ng-if="!user.uid">
+	  	<div class="col-xs-12 col-sm-6">
+	  		<img class="primary-logo img-responsive col-sm-offset-2" src="/images/taymrecordslogo_white.png">
+	 		<h3 class="col-sm-offset-1">YOUR ONLINE VINYL DATABASE.</h3>
+	  	</div>
 
-
-	  <div class="col-sm-4 login-form">
-		  <input type="email" style="text-transform:uppercase" id="inputEmail" class="form-control form-spacing input-field" placeholder="EMAIL ADDRESS" ng-model="auth.email" required autofocus>
-		  <input type="password" class="form-control form-spacing input-field" placeholder="PASSWORD" ng-model="auth.password" required>
-		  <input type="text" style="text-transform:uppercase" class="form-control form-spacing input-field" placeholder="USERNAME" ng-model="auth.username" required>
-		  <a class="btn no-border-btn col-xs-6" ng-click="loginUser()">LOGIN</a>
-		  <a class="btn no-border-btn col-xs-6" ng-click="registerUser()">REGISTER</a>
-	  </div>
+		<div class="col-xs-12 col-sm-6">
+			<div class="row login-form">
+				<input type="email" style="text-transform:uppercase" id="inputEmail" class="input-field col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2" placeholder="EMAIL ADDRESS" ng-model="auth.email" required autofocus>
+				<input type="password" class="input-field col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2" placeholder="PASSWORD" ng-model="auth.password" required>
+				<input type="text" style="text-transform:uppercase" class="input-field col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2" placeholder="USERNAME" ng-model="auth.username" required>
+			</div>
+			<div class="row">
+				<a class="btn no-border-btn col-xs-4 col-sm-4 col-sm-offset-2 col-xs-offset-2" ng-click="loginUser()">LOGIN</a>
+				<a class="btn no-border-btn col-xs-4 col-sm-4" ng-click="registerUser()">REGISTER</a>
+			</div>
+		</div>
 	</div>
-</div>

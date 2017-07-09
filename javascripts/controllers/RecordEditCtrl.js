@@ -1,4 +1,4 @@
-app.controller("RecordEditCtrl", function($location, $routeParams, $scope, RecordFactory) {
+app.controller("RecordEditCtrl", function($window, $location, $routeParams, $scope, RecordFactory) {
 	$scope.addedRecordInfo = {};
 
 	RecordFactory.getSingleRecord($routeParams.id).then((results) => {
@@ -14,5 +14,9 @@ app.controller("RecordEditCtrl", function($location, $routeParams, $scope, Recor
 	  		console.log("editRecord error", error);
 	  	});
 	};
+
+   $scope.backToRecordInfoButton = () => {
+      $window.history.back();
+   };
 
 });

@@ -1,10 +1,3 @@
-<!-- <input type="image" class="thumbnail" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">
-<input type="text" style="text-transform:uppercase" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
-<input type="text" style="text-transform:uppercase" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
-<input type="text" style="text-transform:uppercase" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">
-<a class="btn no-border-btn" ng-click="addNewRecord()">ADD TO COLLECTION</a> -->
-
-
 <div class="row">
     <div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
 
@@ -27,7 +20,8 @@
 		</div>
 
 		<div class="row">
-			<a class="btn no-border-btn col-xs-12 col-sm-4 col-sm-offset-6" ng-click="addNewRecord()">ADD TO COLLECTION</a>
+			<a href="javascript:void(0);" class="btn no-border-btn col-xs-12 col-sm-4 col-sm-offset-2" ng-click="backToRecordInfoButton()">CANCEL</a>
+			<a class="btn no-border-btn col-xs-12 col-sm-4" ng-click="addNewRecord()">ADD TO COLLECTION</a>
 		</div>
 
     </div>

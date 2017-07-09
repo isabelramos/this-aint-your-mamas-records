@@ -9,6 +9,14 @@ app.controller("RecordViewCtrl", function($location, $routeParams, $scope, Recor
   	console.log("getSingleRecord error", error);
   });
 
+  $scope.closeModal = () => {
+      $scope.deleteButtonClicked = false;
+  };
+
+  $scope.activateAreYouSureModal = () => {
+      $scope.deleteButtonClicked = true;
+  };
+
     $scope.deleteRecord = (id) => {
     	RecordFactory.deletz(id).then(() => {
     		$location.url("/record/list");
