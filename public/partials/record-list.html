@@ -1,10 +1,8 @@
 <div class="row">
 	<div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
 
-
-
 	<div class="col-xs-12 col-sm-6 col-md-8" ng-if="!isFriendProfile">
-		<div class="row">
+		<div class="row center-input">
 			<input type="text" class="input-field" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
 		</div>
 
@@ -20,26 +18,26 @@
 		</div>
 	</div>
 
-<div class="col-xs-12 col-sm-6 col-md-8" ng-if="isFriendProfile">
-	<div class="row">
-		<div class="friend-collection-pic">
-			<img ng-src="{{friend.profile_pic}}">
-			<h4 class="friend-username">{{friend.username}}'S<br>COLLECTION</h4>
+	<div class="col-xs-12 col-sm-6 col-md-8" ng-if="isFriendProfile">
+		<div class="row center-input">
+			<div class="friend-collection-pic">
+				<img ng-src="{{friend.profile_pic}}">
+				<h4 class="friend-username">{{friend.username}}'S<br>COLLECTION</h4>
+			</div>
+			<input type="text" class="input-field" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
 		</div>
-		<input type="text" class="col-xs-12 col-md-6 input-field" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
-	</div>
 
-	  <div class="col-xs-12 col-sm-4" ng-repeat="record in records | filter: searchText">
-	  	<div class="thumbnail-container">
-		    <div class="thumbnail">
-		      	<img ng-src="{{record.image}}" class="thumbnail-art">
-		      	<span class="thumbnail-effect">
-		      		<a class="btn thumbnail-btn" ng-href="#!/record/friend/{{friend.uid}}/view/{{record.id}}">VIEW MORE</a>
-		      	</span>
-		    </div>
+		<div class="col-xs-12 col-sm-4" ng-repeat="record in records | filter: searchText">
+		  	<div class="thumbnail-container">
+			    <div class="thumbnail">
+			      	<img ng-src="{{record.image}}" class="thumbnail-art">
+			      	<span class="thumbnail-effect">
+			      		<a class="btn thumbnail-btn" ng-href="#!/record/friend/{{friend.uid}}/view/{{record.id}}">VIEW MORE</a>
+			      	</span>
+			    </div>
+			</div>
 		</div>
 	</div>
-</div>
 
 
 </div> <!-- row -->

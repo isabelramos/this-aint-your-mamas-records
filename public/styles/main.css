@@ -148,18 +148,21 @@ nav {
   opacity: 0.8;
   transition: .5s ease; }
 
+.center-input {
+  margin-right: 15px;
+  text-align: center; }
+
+.search-input {
+  width: 55%; }
+
 .btn {
-  width: 35%;
   padding: 12px;
   background-color: white;
   border: 2px solid #726967;
   color: #726967; }
 
-.logout-btn {
-  width: 120px; }
-
-.thumbnail-btn {
-  width: 100%; }
+.btn:hover {
+  color: #726967; }
 
 .no-border-btn {
   background-color: white;
@@ -169,16 +172,13 @@ nav {
   letter-spacing: 0.4rem;
   transition: .5s ease; }
 
-.btn:hover {
-  color: #726967; }
-
 .no-border-btn:hover {
   color: #726967;
   opacity: 0.8;
   transition: .5s ease; }
 
-.search-input {
-  margin-right: 15px; }
+.login-register-btn {
+  width: 35%; }
 
 .view-info {
   margin-top: 20%; }
@@ -216,7 +216,7 @@ ul li a:visited {
   align-items: center;
   justify-content: center; }
 
-h3 {
+.slogan-text {
   text-align: center; }
 
 .pie-logo {
@@ -234,4 +234,5 @@ h3 {
 
 .friend-username {
   display: inline-block;
+  text-align: left;
   margin-top: 15px; }

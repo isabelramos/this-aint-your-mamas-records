@@ -73,20 +73,24 @@ nav {
   transition: .5s ease; 
 }
 
+.center-input {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.search-input {
+  width: 55%;
+}
+
 .btn {
-  width: 35%;
   padding: 12px;
   background-color: white;
   border: 2px solid $slategray;
   color: $slategray;
 }
 
-.logout-btn {
-  width: 120px;
-}
-
-.thumbnail-btn {
-  width: 100%;
+.btn:hover {
+  color: $slategray;
 }
 
 .no-border-btn {
@@ -98,18 +102,14 @@ nav {
   transition: .5s ease;
 }
 
-.btn:hover {
-  color: $slategray;
-}
-
 .no-border-btn:hover {
   color: $slategray;
   opacity: 0.8;
   transition: .5s ease;
 }
 
-.search-input {
-  margin-right: 15px;
+.login-register-btn {
+  width: 35%;
 }
 
 .view-info {
@@ -156,7 +156,7 @@ ul li a:visited {
   justify-content: center;
 }
 
-h3 {
+.slogan-text {
   text-align: center;
 }
 
@@ -178,6 +178,7 @@ h3 {
 
 .friend-username {
   display: inline-block;
+  text-align: left;
   margin-top: 15px;
 
 }
