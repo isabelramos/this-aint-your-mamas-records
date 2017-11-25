@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	  <title>This Ain't Your Mama's Records | Your Online Vinyl Database.</title>
+	  <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.css">
+	  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-square.css">
+	  <link rel="stylesheet" type="text/css" href="styles/main.css">
+	</head>
+
+	<body ng-app="RecordApp" ng-cloak>
+
+		<div ng-include="'partials/navbar.html'"></div>
+
+		<div class="container">
+		    <div ng-view></div>	
+		</div>
+
+
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/angular-animate/angular-animate.min.js"></script>
+	<script type="text/javascript" src="./lib/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+
+	<script type="text/javascript" src="./javascripts/app.js"></script>
+	<script type="text/javascript" src="./javascripts/AppConfig.js"></script>
+	<script type="text/javascript" src="./javascripts/AppConstants.js"></script>
+	<script type="text/javascript" src="./javascripts/filters/trustedFilter.js"></script>
+	<script type="text/javascript" src="./javascripts/filters/uppercaseFilter.js"></script>
+	<script type="text/javascript" src="./javascripts/factories/AuthFactory.js"></script>	
+	<script type="text/javascript" src="./javascripts/factories/UserFactory.js"></script>	
+	<script type="text/javascript" src="./javascripts/factories/RecordFactory.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/AuthCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/NavCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/RecordListCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/RecordSearchCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/RecordEditCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/RecordViewCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/RecordNewCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/ViewFriendsCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/FriendRecordListCtrl.js"></script>
+	<script type="text/javascript" src="./javascripts/controllers/FriendRecordViewCtrl.js"></script>
+	</body>
+
+</html>
