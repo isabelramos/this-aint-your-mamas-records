@@ -30,10 +30,14 @@ a:active,
   -webkit-box-shadow: none;
   box-shadow: none; }
 
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
 body {
-  background-image: url(/images/background.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #726967;
   font-family: 'Righteous', cursive;
   color: white;
@@ -62,6 +66,7 @@ nav {
   text-decoration: none; }
 
 .input-field {
+  width: 70%;
   color: #726967;
   padding: 10px;
   margin-bottom: 20px;
@@ -73,6 +78,7 @@ nav {
   transition: .5s ease; }
 
 .btn {
+  width: 35%;
   padding: 12px;
   background-color: white;
   border: 2px solid #726967;
@@ -135,7 +141,8 @@ p {
   color: #726967; }
 
 .login-form {
-  margin-top: 30%; }
+  margin-top: 35%;
+  text-align: center; }
 
 .toggled {
   position: absolute;
@@ -167,8 +174,7 @@ p {
   font-size: 2rem; }
 
 .profile-userbuttons {
-  text-align: center;
-  /*margin-top: 10px;*/ }
+  text-align: center; }
 
 .profile-usermenu {
   margin-top: 15px;
@@ -197,6 +203,15 @@ ul li a:visited {
 .primary-logo {
   width: 375px;
   margin-top: 10%; }
+
+.aligner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+h3 {
+  text-align: center; }
 
 .pie-logo {
   width: 90px;
