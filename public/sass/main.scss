@@ -30,6 +30,7 @@ body {
   font-family: 'Righteous', cursive;
   color: white;
   letter-spacing: 0.4rem;
+  margin-bottom: 50px;
 }
 
 nav {
@@ -80,6 +81,10 @@ nav {
   color: $slategray;
   opacity: 0.8;
   transition: .5s ease; 
+}
+
+.add-record-input-field {
+  width: 55%;
 }
 
 .center-input {
@@ -166,6 +171,10 @@ ul li a:visited {
   margin-top: 100px;
 }
 
+.add-thumbnail {
+  width: 250px;
+}
+
 .view-info {
   margin-left: 25px;
 }
@@ -197,12 +206,18 @@ ul li a:visited {
   .col-sm-4 {
     width: 33.33333333%;
   }
+  .profile-column .profile-sidebar {
+    width: 85%;
+  }
 
 }
 
 @media screen and (max-width: 991px) {
   .col-sm-4 {
     width: 100%;
+  }
+  .profile-column .profile-sidebar {
+    width: 70%;
   }
   .input-field {
     width: 90%;
@@ -248,7 +263,7 @@ ul li a:visited {
     margin-top: 10%;
   }
   .login-form {
-    margin: 5% 0;
+    margin-top: 50px;
   }
   .input-field {
     width: 70%;
@@ -261,9 +276,11 @@ ul li a:visited {
   }
   .view-thumbnail {
     width: 300px;
+    margin-top: 50px;
   }
-  .horizontal-aligner {
-    margin: 50px 0;
+  .add-thumbnail {
+    margin: 50px 0 20px;
+    width: 300px;
   }
 
 }
