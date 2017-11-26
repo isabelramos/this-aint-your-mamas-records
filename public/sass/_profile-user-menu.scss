@@ -1,5 +1,6 @@
 .profile-column .profile-sidebar {
-  min-height: 410px;
+  width: 70%;
+  min-height: 100%;
 }
 
 .profile-sidebar {
@@ -39,11 +40,5 @@
 
 .profile-usermenu ul li a i {
   margin-right: 8px;
-  font-size: 14px;
-}
-
-.profile-content {
-  padding: 20px;
-  background: white;
-  min-height: 410px;
+  font-size: 12px;
 }

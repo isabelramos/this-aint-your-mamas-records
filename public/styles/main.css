@@ -29,7 +29,8 @@
   margin-right: 2.5%; }
 
 .profile-column .profile-sidebar {
-  min-height: 410px; }
+  width: 70%;
+  min-height: 100%; }
 
 .profile-sidebar {
   padding: 30px 0 10px 0;
@@ -62,12 +63,7 @@
 
 .profile-usermenu ul li a i {
   margin-right: 8px;
-  font-size: 14px; }
-
-.profile-content {
-  padding: 20px;
-  background: white;
-  min-height: 410px; }
+  font-size: 12px; }
 
 .delete-modal {
   width: 350px;
@@ -191,10 +187,6 @@ p {
   margin-top: 35%;
   text-align: center; }
 
-.toggled {
-  position: absolute;
-  margin-right: -250px; }
-
 ul li a {
   color: #726967;
   transition: .5s ease; }
@@ -210,14 +202,14 @@ ul li a:visited {
   width: 375px;
   margin-top: 10%; }
 
+.slogan-text {
+  text-align: center; }
+
 .aligner {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.slogan-text {
-  text-align: center; }
 
 .pie-logo {
   width: 90px;
@@ -236,3 +228,19 @@ ul li a:visited {
   display: inline-block;
   text-align: left;
   margin-top: 15px; }
+
+@media screen and (max-width: 1199px) {
+  .col-sm-4 {
+    width: 33.33333333%; } }
+
+@media screen and (max-width: 991px) {
+  .col-sm-4 {
+    width: 100%; } }
+
+@media screen and (max-width: 767px) {
+  .col-sm-4 {
+    width: 50%; } }
+
+@media screen and (max-width: 400px) {
+  .col-sm-4 {
+    width: 100%; } }
