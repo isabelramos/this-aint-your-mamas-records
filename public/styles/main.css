@@ -25,7 +25,8 @@
   opacity: 1; }
 
 .view-thumbnail {
-  width: 250px; }
+  width: 250px;
+  margin-bottom: 0; }
 
 .view-name {
   margin-top: 0; }
@@ -70,8 +71,6 @@
 .delete-modal {
   width: 350px;
   height: 165px;
-  margin-top: 20%;
-  margin-left: 25%;
   padding: 0 25px;
   background-color: white;
   opacity: 0.95;
@@ -219,7 +218,8 @@ ul li a:visited {
 .horizontal-aligner {
   display: flex;
   flex-direction: row;
-  align-content: center; }
+  align-content: center;
+  margin-top: 100px; }
 
 .view-info {
   margin-left: 25px; }
@@ -259,7 +259,16 @@ ul li a:visited {
   .login-form {
     margin-top: 45%; }
   .search-input {
-    width: 65%; } }
+    width: 65%; }
+  .horizontal-aligner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 0; }
+  .view-info {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 15px; } }
 
 @media screen and (max-width: 767px) {
   .col-sm-4 {
@@ -278,7 +287,11 @@ ul li a:visited {
   .login-register-btn {
     width: 35%; }
   .center-input {
-    margin-top: 10%; } }
+    margin-top: 10%; }
+  .view-thumbnail {
+    width: 300px; }
+  .horizontal-aligner {
+    margin: 50px 0; } }
 
 @media screen and (max-width: 585px) {
   .input-field {
