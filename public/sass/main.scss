@@ -33,7 +33,7 @@ body {
 }
 
 nav {
-  padding-top: 15px;
+  padding: 15px;
 }
 
 .navbar {
@@ -120,10 +120,6 @@ nav {
   width: 35%;
 }
 
-.view-info {
-  margin-top: 20%;
-}
-
 p {
   text-align: center;
   color: $slategray;
@@ -161,6 +157,16 @@ ul li a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.horizontal-aligner {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.view-info {
+  margin-left: 25px;
 }
 
 .pie-logo {
@@ -210,6 +216,9 @@ ul li a:visited {
   .login-form {
     margin-top: 45%;
   }
+  .search-input {
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -246,6 +255,9 @@ ul li a:visited {
   }
   .login-register-btn {
     width: 45%;
+  }
+  .search-input {
+    width: 55%;
   }
 }
 

@@ -1,10 +1,11 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
+    <div class="col-xs-12 col-sm-6 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
 
 
     <div class="col-xs-12 col-sm-6 col-md-8">
-        <div class="row">
-            <div class="col-xs-12 col-sm-4 col-sm-offset-1 thumbnail view-thumbnail" ng-if="selectedRecord.purchase_location">
+        <div class="row horizontal-aligner aligner">
+
+            <div class="thumbnail view-thumbnail" ng-if="selectedRecord.purchase_location">
             	<img ng-src="{{selectedRecord.image}}">
             </div>
             
@@ -17,20 +18,20 @@
             </div>
             
             <div class="view-info">
-                <h3>{{selectedRecord.name | makeTextUppercase}}</h3>
+                <h3 class="view-name">{{selectedRecord.name | makeTextUppercase}}</h3>
                 <h4>{{selectedRecord.artist | makeTextUppercase}}</h4>
                 <br>
                 <h5>PURCHASE LOCATION:</h5>
                 <h4>{{selectedRecord.purchase_location | makeTextUppercase}}</h4>
-            </div>
 
-            <div ng-if="!isFriendProfile">
-               <a ng-href="#!/record/edit/{{selectedRecord.id}}"class="btn no-border-btn">EDIT</a>
-                <a class="btn no-border-btn" ng-click="activateAreYouSureModal()">DELETE</a>
-            </div>
+                <div ng-if="!isFriendProfile">
+                   <a ng-href="#!/record/edit/{{selectedRecord.id}}"class="btn no-border-btn">EDIT</a>
+                    <a class="btn no-border-btn" ng-click="activateAreYouSureModal()">DELETE</a>
+                </div>
 
-            <div ng-if="isFriendProfile">
-                <a href="javascript:void(0);" ng-click="backToCollectionButton()" class="btn no-border-btn">BACK TO COLLECTION</a>
+                <div ng-if="isFriendProfile">
+                    <a href="javascript:void(0);" ng-click="backToCollectionButton()" class="btn no-border-btn">BACK TO COLLECTION</a>
+                </div>
             </div>
 
         </div>

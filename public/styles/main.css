@@ -25,8 +25,10 @@
   opacity: 1; }
 
 .view-thumbnail {
-  margin-top: 15%;
-  margin-right: 2.5%; }
+  width: 250px; }
+
+.view-name {
+  margin-top: 0; }
 
 .profile-column .profile-sidebar {
   width: 70%;
@@ -111,7 +113,7 @@ body {
   letter-spacing: 0.4rem; }
 
 nav {
-  padding-top: 15px; }
+  padding: 15px; }
 
 .navbar {
   background-color: transparent;
@@ -182,9 +184,6 @@ nav {
 .login-register-btn {
   width: 35%; }
 
-.view-info {
-  margin-top: 20%; }
-
 p {
   text-align: center;
   color: #726967; }
@@ -216,6 +215,14 @@ ul li a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.horizontal-aligner {
+  display: flex;
+  flex-direction: row;
+  align-content: center; }
+
+.view-info {
+  margin-left: 25px; }
 
 .pie-logo {
   width: 90px;
@@ -250,7 +257,9 @@ ul li a:visited {
     width: 300px;
     margin-top: 25%; }
   .login-form {
-    margin-top: 45%; } }
+    margin-top: 45%; }
+  .search-input {
+    width: 65%; } }
 
 @media screen and (max-width: 767px) {
   .col-sm-4 {
@@ -275,7 +284,9 @@ ul li a:visited {
   .input-field {
     width: 90%; }
   .login-register-btn {
-    width: 45%; } }
+    width: 45%; }
+  .search-input {
+    width: 55%; } }
 
 @media screen and (max-width: 400px) {
   .col-sm-4 {
