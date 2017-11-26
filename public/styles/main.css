@@ -117,6 +117,9 @@ nav {
   background-color: transparent;
   border: none; }
 
+.navbar-default .navbar-toggle {
+  margin-top: none; }
+
 .secondary-logo {
   color: white;
   transition: .5s ease;
@@ -125,6 +128,10 @@ nav {
 
 .navbar-header .secondary-logo:visited {
   color: white; }
+
+.navbar-collapse {
+  border-top: none;
+  border-color: transparent; }
 
 .secondary-logo:hover {
   color: white;
@@ -145,7 +152,6 @@ nav {
   transition: .5s ease; }
 
 .center-input {
-  margin-right: 15px;
   text-align: center; }
 
 .search-input {
@@ -235,11 +241,41 @@ ul li a:visited {
 
 @media screen and (max-width: 991px) {
   .col-sm-4 {
-    width: 100%; } }
+    width: 100%; }
+  .input-field {
+    width: 90%; }
+  .login-register-btn {
+    width: 45%; }
+  .primary-logo {
+    width: 300px;
+    margin-top: 25%; }
+  .login-form {
+    margin-top: 45%; } }
 
 @media screen and (max-width: 767px) {
   .col-sm-4 {
-    width: 50%; } }
+    width: 50%; }
+  .navbar-header, .navbar-right {
+    text-align: center; }
+  .navbar-right {
+    margin-top: 20px; }
+  .primary-logo {
+    width: 300px;
+    margin-top: 10%; }
+  .login-form {
+    margin: 5% 0; }
+  .input-field {
+    width: 70%; }
+  .login-register-btn {
+    width: 35%; }
+  .center-input {
+    margin-top: 10%; } }
+
+@media screen and (max-width: 585px) {
+  .input-field {
+    width: 90%; }
+  .login-register-btn {
+    width: 45%; } }
 
 @media screen and (max-width: 400px) {
   .col-sm-4 {
