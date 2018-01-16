@@ -1,27 +1,20 @@
 <div class="row">
-    <div class="col-xs-12 col-sm-4 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
-
+	<div class="col-xs-12 col-sm-6 col-md-4" ng-include="'partials/user-side-profile.html'"></div>
 
     <div class="col-xs-12 col-sm-6 col-md-8">
-        <div class="row">
-            <img class="col-xs-12 col-sm-4 col-sm-offset-4 thumbnail" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">	
-        </div>
+        <div class="row aligner">
+            <img class="thumbnail add-thumbnail" ng-model="addedRecordInfo.image" ng-src="{{addedRecordInfo.image | trusted}}">	
 
-		<div class="row">
-			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
-		</div>
+			<input type="text" class="input-field add-record-input-field" style="text-transform:uppercase" name="" placeholder="ALBUM TITLE" ng-model="addedRecordInfo.name">
 
-		<div class="row">
-			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
-		</div>
+			<input type="text" class="input-field add-record-input-field" style="text-transform:uppercase" name="" placeholder="ARTIST NAME" ng-model="addedRecordInfo.artist">
 
-		<div class="row">
-			<input type="text" class="col-xs-12 col-md-8 col-md-offset-2 input-field" style="text-transform:uppercase" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">
-		</div>
+			<input type="text" class="input-field add-record-input-field" style="text-transform:uppercase" name="" placeholder="PURCHASE LOCATION" ng-model="addedRecordInfo.purchase_location">
 
-		<div class="row">
-			<a href="javascript:void(0);" class="btn no-border-btn col-xs-12 col-sm-4 col-sm-offset-2" ng-click="backToRecordInfoButton()">CANCEL</a>
-			<a class="btn no-border-btn col-xs-12 col-sm-4" ng-click="addNewRecord()">ADD TO COLLECTION</a>
+			<div>
+				<a href="javascript:void(0);" class="btn no-border-btn" ng-click="backToRecordInfoButton()">CANCEL</a>
+				<a class="btn no-border-btn" ng-click="addNewRecord()">ADD RECORD</a>	
+			</div>
 		</div>
 
     </div>

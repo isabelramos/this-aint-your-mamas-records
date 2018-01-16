@@ -1,0 +1,43 @@
+.profile-column .profile-sidebar {
+  width: 70%;
+  min-height: 100%;
+}
+
+.profile-sidebar {
+  padding: 30px 0 10px;
+  background: white;
+  opacity: 0.9;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: $slategray;
+  font-size: 1.65rem;
+}
+
+.profile-userbuttons {
+  text-align: center;
+}
+   
+.profile-usermenu {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.profile-usermenu ul li a {
+  font-size: 1.25rem;
+}
