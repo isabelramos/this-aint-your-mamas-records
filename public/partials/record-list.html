@@ -27,7 +27,7 @@
 			<input type="text" class="input-field" style="text-transform:uppercase" name="" placeholder="SEARCH COLLECTION" ng-model="searchText">
 		</div>
 
-		<div class="col-xs-12 col-sm-4" ng-repeat="record in records | filter: searchText">
+		<div  class="col-xs-12 col-sm-4" ng-show="records.length" ng-repeat="record in records | filter: searchText">
 		  	<div class="thumbnail-container">
 			    <div class="thumbnail">
 			      	<img ng-src="{{record.image}}" class="thumbnail-art">
@@ -36,6 +36,10 @@
 			      	</span>
 			    </div>
 			</div>
+		</div>
+		<div class="no-records-info" ng-show="records.length == 0">
+			<h3 class="no-records-text">NO RECORDS IN THIS COLLECTION</h3>
+            <a href="javascript:void(0);" ng-click="backToCollectionButton()" class="btn no-border-btn">BACK TO FRIENDS</a>
 		</div>
 	</div>
 

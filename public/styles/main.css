@@ -186,6 +186,12 @@ nav {
 .login-register-btn {
   width: 35%; }
 
+.no-records-info {
+  text-align: center; }
+
+.no-records-text {
+  line-height: 3.5rem; }
+
 p {
   text-align: center;
   color: #726967; }

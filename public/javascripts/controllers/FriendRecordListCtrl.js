@@ -1,4 +1,4 @@
-app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope, RecordFactory, UserFactory) {
+app.controller("FriendRecordListCtrl", function($window, $rootScope, $routeParams, $scope, RecordFactory, UserFactory) {
 
   $scope.isFriendProfile = $routeParams.uid;
 
@@ -23,5 +23,9 @@ app.controller("FriendRecordListCtrl", function($rootScope, $routeParams, $scope
   };
 
   getFriendsCollection();
+
+  $scope.backToCollectionButton = () => {
+    $window.history.back();
+  };
 
 });
