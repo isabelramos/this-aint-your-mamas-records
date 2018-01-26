@@ -48,6 +48,25 @@ app.factory("RecordFactory", function($http, $q, $routeParams, FIREBASE_CONFIG, 
 	     	});
     	}); 
  	};
+
+  //   let getRecordList = (userId) => {
+  //   return $q ((resolve, reject) => {
+  //       $http.get(`${FIREBASE_CONFIG.databaseURL}/records.json?orderBy="uid"&equalTo="${userId}"`)
+  //       .then((firebaseItems) => {
+  //         let itemCollection = firebaseItems.data;
+  //         if (itemCollection !== null) {
+  //           let recordKeys = Object.keys(itemCollection);
+  //           let recordz = recordKeys.map((key) => {
+  //              itemCollection[key].id = key;
+  //              return itemCollection[key];
+  //           });
+  //         }
+  //           resolve(recordz);
+  //         }).catch((error) => {
+  //           reject(error);
+  //       });
+  //     }); 
+  // };
   
     let getSingleRecord = (id) => {
     return $q ((resolve, reject) => {

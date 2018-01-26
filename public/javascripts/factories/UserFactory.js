@@ -21,9 +21,9 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
     return $q((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/users.json?orderBy="uid"&equalTo="${userId}"`)
         .then((userObject) => {
-          let users = [];
-          Object.keys(userObject.data).forEach((key) => {
-            users.push(userObject.data[key]);
+          let userKeys = Object.keys(userObject.data);
+          let users = userKeys.map((key) => {
+             return userObject.data[key];
           });
           resolve(users[0]);
         })
@@ -37,9 +37,9 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
     return $q((resolve, reject) => {
       $http.get(`${FIREBASE_CONFIG.databaseURL}/users.json`)
         .then((userObject) => {
-          let users = [];
-          Object.keys(userObject.data).forEach((key) => {
-            users.push(userObject.data[key]);
+          let userKeys = Object.keys(userObject.data);
+          let users = userKeys.map((key) => {
+             return userObject.data[key];
           });
           resolve(users);
         })
