@@ -30,7 +30,6 @@ body {
   font-family: 'Righteous', cursive;
   color: white;
   letter-spacing: 0.4rem;
-  margin-bottom: 50px;
 }
 
 nav {
@@ -139,7 +138,6 @@ p {
 }
 
 .login-form {
-  margin-top: 35%;
   text-align: center;
 }
 
@@ -158,7 +156,6 @@ ul li a:visited {
 
 .primary-logo {
   width: 375px;
-  margin-top: 10%;
 }
 
 .slogan-text {
@@ -170,6 +167,14 @@ ul li a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.viewport-aligner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .horizontal-aligner {
@@ -235,10 +240,6 @@ ul li a:visited {
   }
   .primary-logo {
     width: 300px;
-    margin-top: 25%;
-  }
-  .login-form {
-    margin-top: 45%;
   }
   .search-input {
     width: 65%;
@@ -257,6 +258,9 @@ ul li a:visited {
 }
 
 @media screen and (max-width: 767px) {
+  body {
+    margin-bottom: 50px;
+  }
   .col-sm-4 {
     width: 50%;
   }
@@ -266,8 +270,10 @@ ul li a:visited {
   .navbar-right {
     margin-top: 20px;
   }
+  .viewport-aligner {
+    height: auto;
+  }
   .primary-logo {
-    width: 300px;
     margin-top: 10%;
   }
   .login-form {

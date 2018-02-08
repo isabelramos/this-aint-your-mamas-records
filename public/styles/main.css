@@ -108,8 +108,7 @@ body {
   background-color: #726967;
   font-family: 'Righteous', cursive;
   color: white;
-  letter-spacing: 0.4rem;
-  margin-bottom: 50px; }
+  letter-spacing: 0.4rem; }
 
 nav {
   padding: 15px; }
@@ -197,7 +196,6 @@ p {
   color: #726967; }
 
 .login-form {
-  margin-top: 35%;
   text-align: center; }
 
 ul li a {
@@ -212,8 +210,7 @@ ul li a:visited {
   opacity: 0.3; }
 
 .primary-logo {
-  width: 375px;
-  margin-top: 10%; }
+  width: 375px; }
 
 .slogan-text {
   text-align: center; }
@@ -223,6 +220,13 @@ ul li a:visited {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+
+.viewport-aligner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
 
 .horizontal-aligner {
   display: flex;
@@ -270,10 +274,7 @@ ul li a:visited {
   .login-register-btn {
     width: 45%; }
   .primary-logo {
-    width: 300px;
-    margin-top: 25%; }
-  .login-form {
-    margin-top: 45%; }
+    width: 300px; }
   .search-input {
     width: 65%; }
   .horizontal-aligner {
@@ -287,14 +288,17 @@ ul li a:visited {
     margin-top: 15px; } }
 
 @media screen and (max-width: 767px) {
+  body {
+    margin-bottom: 50px; }
   .col-sm-4 {
     width: 50%; }
   .navbar-header, .navbar-right {
     text-align: center; }
   .navbar-right {
     margin-top: 20px; }
+  .viewport-aligner {
+    height: auto; }
   .primary-logo {
-    width: 300px;
     margin-top: 10%; }
   .login-form {
     margin-top: 50px; }
